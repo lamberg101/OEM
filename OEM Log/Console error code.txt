@@ -1,0 +1,29 @@
+oracle@mcbdbconsuat> # pwd
+/oracle/app/em13c
+oracle@mcbdbconsuat> # hostname
+mcbdbconsuat
+oracle@mcbdbconsuat> # date
+Thu Apr 27 14:21:15 WIT 2023
+oracle@mcbdbconsuat> #
+
+
+------------------------------------------------------------------------------------------------
+
+Error:
+Installation and Configuration	Failed	
+
+Execution of command /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentDeploy.sh -ignorePrereqs ORACLE_HOSTNAME=mcbdbconsuat AGENT_BASE_DIR=/oracle/app/em13c OMS_HOST=bmioem EM_UPLOAD_PORT=4903 AGENT_INSTANCE_HOME=/oracle/app/em13c/agent_inst b_doDiscovery=false START_AGENT=false b_forceInstCheck=true -force AGENT_PORT=3872 on host mcbdbconsuat Failed	
+
+Error Message: The Oracle Management Server (OMS) host and port specified via OMS_HOST and EM_UPLOAD_PORT is not available. Pass in a valid hostname and port number for the OMS to successfully deploy the agent. 
+
+Exit Code :1	Fix the cause of the error and retry the operation
+
+------------------------------------------------------------------------------------------------
+
+Collect Log	Failed	
+
+Execution of command (cd /oracle/app/em13c/agent_13.1.0.0.0/cfgtoollogs && /oracle/app/em13c/agent_13.1.0.0.0/bin/zip -q -r /tmp/remoteArchivesmcbdbconsuat2023-04-27_02-27-59-PM.zip * -x oui/**\* OPatch/**\* oracle_common/**\*) on host mcbdbconsuat Failed	
+
+Error Message:/bin/sh: /*****/app/em13c/agent_13.1.0.0.0/bin/zip: not found. 
+
+Exit Code :127	Not Available

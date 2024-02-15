@@ -1,0 +1,5 @@
+oracle.sysman.db|13.1.1.0.0| |discoveryPlugin
+oracle.sysman.emas|13.1.1.0.0| |discoveryPlugin
+oracle.sysman.si|13.1.1.0.0| |discoveryPlugin
+oracle.sysman.oh|13.1.0.0.0| |discoveryPlugin
+oracle.sysman.oh|13.1.0.0.0| |agentPlugin

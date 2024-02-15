@@ -1,0 +1,36 @@
+[oracle@bmioem bin]$ ./emctl status oms -details
+Oracle Enterprise Manager Cloud Control 13c Release 1
+Copyright (c) 1996, 2015 Oracle Corporation.  All rights reserved.
+Enter Enterprise Manager Root (SYSMAN) Password :
+Console Server Host        : bmioem
+HTTP Console Port          : 7788
+HTTPS Console Port         : 7802
+HTTP Upload Port           : 4889
+HTTPS Upload Port          : 4903
+EM Instance Home           : /oracle/app/oracle/gc_inst/em/EMGC_OMS1
+OMS Log Directory Location : /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/log
+OMS is not configured with SLB or virtual hostname
+Agent Upload is locked.
+OMS Console is locked.
+Active CA ID: 1
+Console URL: https://bmioem:7802/em
+Upload URL: https://bmioem:4903/empbs/upload
+
+WLS Domain Information
+Domain Name            : GCDomain
+Admin Server Host      : bmioem
+Admin Server HTTPS Port: 7102
+Admin Server is RUNNING
+
+Oracle Management Server Information
+Managed Server Instance Name: EMGC_OMS1
+Oracle Management Server Instance Host: bmioem
+WebTier is Up
+Oracle Management Server is Up
+JVMD Engine is Up
+
+BI Publisher Server Information
+BI Publisher Managed Server Name: BIP
+BI Publisher Server is Down
+BI Publisher is disabled, to enable BI Publisher on this host, use the 'emctl config oms -enable_bip' command
+[oracle@bmioem bin]$

@@ -1,0 +1,251 @@
+2023-04-10_15-29-40:INFO:Got Deployment Logger Successfully 
+2023-04-10_15-29-40:INFO:UIPage Model is not null
+2023-04-10_15-29-40:INFO:=====SESSION ID :2023-04-10_15-27-24-PM
+2023-04-10_15-29-40:INFO:====================GROUP:group1
+2023-04-10_15-29-41:INFO:=====SESSION ROOT DIR :/oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-10_15-27-24-PM
+2023-04-10_15-29-41:INFO:FIX and RETRY SCENARIO false
+2023-04-10_15-29-41:INFO:=========USER INPUTS BEAN :[UIBean: deploymentSessionName: ADD_HOST_SYSMAN_10-Apr-2023_15:27:24_WIB sessionId: 2023-04-10_15-27-24-PM ntTmpDir: C:/tmp unixTmpDir /tmp remotePathPropertiesLoc /oracle/app/oracle/middleware/oui/prov/resources omsHome: /oracle/app/oracle/middleware omsHost: bmioem deploymentType: FRESH_AGENT_INSTALL remoteHostInfo: [[RemoteHostsInfo: platformName: linux_x64 platformId: 226 platformDisplayName: Linux x86-64 installBaseDir: /app/em13c port:3872 userName: oracle password: ***** coreDir: agent versionDir: 13.1.0.0.0 groupId: group1 additionalParameters:  remoteHosts: [uat01-mcb-app.bankmuamalat.co.id]]
+2023-04-10_15-29-41:INFO:SSH Port has not changed
+2023-04-10_15-29-41:INFO:Starting Deployment
+2023-04-10_15-29-41:INFO:String product name and descriptionInitializationDeployer
+2023-04-10_15-29-41:INFO:======Deployer id :InitializationDeployer Deployer Display Name:Initialization
+2023-04-10_15-29-41:INFO:String product name and descriptionRemotePrereqChecker
+2023-04-10_15-29-41:INFO:======Deployer id :RemotePrereqChecker Deployer Display Name:Remote Prerequisite Checks
+2023-04-10_15-29-41:INFO:String product name and descriptionNewAgentDeployer
+2023-04-10_15-29-41:INFO:======Deployer id :NewAgentDeployer Deployer Display Name:Agent Deployment
+2023-04-10_15-29-41:INFO:DeploymentManager.initJNDIState --- doing init for a fresh session
+2023-04-10_15-29-41:INFO:WAITFORUIREFRESH : set to false
+2023-04-10_15-29-41:INFO:Done binding JNDIState for session ID : 2023-04-10_15-27-24-PM
+2023-04-10_15-29-41:INFO:Found JNDI state [JNDIState: DeploySession 
+[ModelDepVo:
+	sessionId:2023-04-10_15-27-24-PM
+	sessionEnded:false
+	 sessionAborted:false
+	 progress bar message:
+	sessionRootDir_m:/oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-10_15-27-24-PM
+[SessionMetaDataVo:
+	 Session Name: null
+	 install type: null
+	 local prereq status: null
+	 remote prereq status: null
+	 install status: null
+SessionMetaDataVo]
+	 Groups: 
+ModelDepVo]]
+2023-04-10_15-29-41:INFO:Navigation Manager redirecting to the Progress Page:submit
+2023-04-10_15-29-41:INFO:Setting Execution  context locale
+2023-04-10_15-29-41:INFO:Setting security context
+2023-04-10_15-29-41:INFO:PERF:THREADPOOLSIZE:16
+2023-04-10_15-29-41:INFO:PERF:SESSIONNAME:ADD_HOST_SYSMAN_10-Apr-2023_15:27:24_WIB
+2023-04-10_15-29-41:INFO:PERF:HOSTNAMES:[uat01-mcb-app.bankmuamalat.co.id]
+2023-04-10_15-29-41:INFO:PERF:HOSTCOUNT:1
+2023-04-10_15-29-41:INFO:======Creating DC for hostnameuat01-mcb-app.bankmuamalat.co.id
+2023-04-10_15-29-41:INFO:===========Creating Group Vo  for group group1
+2023-04-10_15-29-41:INFO:===============Creating Host Vo  for host uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_15-29-41:INFO:Product InitializationDeployer
+2023-04-10_15-29-41:INFO:Updating the repository after vo creation 
+2023-04-10_15-29-41:INFO:Inside dos2UnixCoversion
+2023-04-10_15-29-41:INFO:Skipping dos2UnixCoversion since current OMS platform is not Windows 
+2023-04-10_15-29-41:INFO:Deploying Product InitializationDeployer
+2023-04-10_15-29-41:INFO:Getting Actions for Deployer start InitializationDeployer
+2023-04-10_15-29-41:INFO:Getting Actions for Deployer end InitializationDeployer
+2023-04-10_15-29-41:INFO:WAITFORUIREFRESH : set to true
+2023-04-10_15-29-41:INFO:AVAILABLE WORKERS 16
+2023-04-10_15-29-41:INFO:extractUnzipOnOMS on OMS during InitializationDeployer
+2023-04-10_15-29-42:INFO:oracle.sysman.prov.agentpush.disablePluginOneoff = false
+2023-04-10_15-29-42:INFO:Calling discovery plugins API to create discovery plugins zip file
+2023-04-10_15-29-42:INFO:Creating plugins zip in fresh install 
+2023-04-10_15-29-43:INFO:Plugins zip location : /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-10_15-27-24-PM/plugins/linux_x64/13.1.0.0.0_Plugins_226.zip
+2023-04-10_15-29-43:INFO:PATHS Address oracle.sysman.prov.remoteinterfaces.nativesystem.Paths@193dad6
+2023-04-10_15-29-43:INFO:======Creating DC for hostnameuat01-mcb-app.bankmuamalat.co.id
+2023-04-10_15-29-43:INFO:======Calling DeploymentContext
+2023-04-10_15-29-43:INFO:Spawning Thread  DeploymentDaemon:Thread-2241050 for hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_15-29-43:INFO:PERF:HOSTNAME:uat01-mcb-app.bankmuamalat.co.id:InitializationDeployer_WAIT_TIME:1862
+2023-04-10_15-29-43:INFO:DAOVO: Inserting Session table
+2023-04-10_15-29-43:INFO:DeploymentDaemo : Generating deploystate xml
+2023-04-10_15-29-43:INFO:workerReturnTimeInMilliSec 2000 initialUpdateCount 30 maxUpdateCount 1800
+2023-04-10_15-29-43:INFO:Thread for DeploymentDaemon:Thread-2241050 product Initialization on host uat01-mcb-app.bankmuamalat.co.id Started
+2023-04-10_15-29-43:INFO:Waiting for worker to complete 0 1
+2023-04-10_15-30-43:INFO:Updating the repository inside deployInParallel 30
+2023-04-10_15-30-45:INFO:Thread for DeploymentDaemon:Thread-2241050 product Initialization on host uat01-mcb-app.bankmuamalat.co.id Ended
+2023-04-10_15-30-45:INFO:WORKER DeploymentDaemon:Thread-2241050 DONE
+2023-04-10_15-30-45:INFO:Clearing Failed Host List
+2023-04-10_15-30-45:INFO:Clearing Passed Host List
+2023-04-10_15-30-45:INFO:Adding host uat01-mcb-app.bankmuamalat.co.idfor product Initialization to the list of PASSED host
+2023-04-10_15-30-45:INFO:======OVERALL STATUS=======PASSED
+2023-04-10_15-30-45:INFO:Initialization OVERALL Status : PASSED
+2023-04-10_15-30-45:INFO:PERF:TOTAL_TIME_InitializationDeployer:63889
+2023-04-10_15-30-45:INFO:TOTAL_TIME_InitializationDeployer:0: hrs 1: mins 3 sec
+2023-04-10_15-30-45:INFO:Product InitializationDeployer final status PASSED : true
+2023-04-10_15-30-45:INFO:updating repository after product InitializationDeployer completed successfully
+2023-04-10_15-30-45:INFO:Deploying Product RemotePrereqChecker
+2023-04-10_15-30-45:INFO:Getting Actions for Deployer start RemotePrereqChecker
+2023-04-10_15-30-45:INFO:Getting Actions for Deployer end RemotePrereqChecker
+2023-04-10_15-30-45:INFO:WAITFORUIREFRESH : set to true
+2023-04-10_15-30-45:INFO:AVAILABLE WORKERS 16
+2023-04-10_15-30-45:INFO:PATHS Address oracle.sysman.prov.remoteinterfaces.nativesystem.Paths@6ff33311
+2023-04-10_15-30-45:INFO:======Creating DC for hostnameuat01-mcb-app.bankmuamalat.co.id
+2023-04-10_15-30-45:INFO:======Calling DeploymentContext
+2023-04-10_15-30-45:INFO:Spawning Thread  DeploymentDaemon:Thread-2241050 for hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_15-30-45:INFO:PERF:HOSTNAME:uat01-mcb-app.bankmuamalat.co.id:RemotePrereqChecker_WAIT_TIME:1
+2023-04-10_15-30-45:INFO:DAOVO: Inserting Session table
+2023-04-10_15-30-45:INFO:DeploymentDaemo : Generating deploystate xml
+2023-04-10_15-30-45:INFO:Thread for DeploymentDaemon:Thread-2241050 product Remote Prerequisite Checks on host uat01-mcb-app.bankmuamalat.co.id Started
+2023-04-10_15-30-45:INFO:workerReturnTimeInMilliSec 2000 initialUpdateCount 30 maxUpdateCount 1800
+2023-04-10_15-30-45:INFO:Waiting for worker to complete 0 1
+2023-04-10_15-31-18:INFO:Thread for DeploymentDaemon:Thread-2241050 product Remote Prerequisite Checks on host uat01-mcb-app.bankmuamalat.co.id Ended
+2023-04-10_15-31-18:INFO:WORKER DeploymentDaemon:Thread-2241050 DONE
+2023-04-10_15-31-19:INFO:Clearing Failed Host List
+2023-04-10_15-31-19:INFO:Clearing Passed Host List
+2023-04-10_15-31-19:INFO:Adding host uat01-mcb-app.bankmuamalat.co.idfor product Remote Prerequisite Checks to the list of FAILED host
+2023-04-10_15-31-19:INFO:======OVERALL STATUS=======WARNING
+2023-04-10_15-31-19:INFO:Remote Prerequisite Checks OVERALL Status : FAILED
+2023-04-10_15-31-19:INFO:Deployment failed on all the hosts
+2023-04-10_15-31-19:INFO:PERF:TOTAL_TIME_RemotePrereqChecker:34016
+2023-04-10_15-31-19:INFO:TOTAL_TIME_RemotePrereqChecker:0: hrs 0: mins 34 sec
+2023-04-10_15-31-19:INFO:Product RemotePrereqChecker final status FAILED : false
+2023-04-10_15-31-19:INFO: Breaking product deployment since previous product RemotePrereqChecker status was false or session was aborted false
+2023-04-10_15-31-19:INFO:Deploying Final product 
+2023-04-10_15-31-19:INFO:Deleting Unzip on OMS
+2023-04-10_15-31-19:INFO:File /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-10_15-27-24-PM/unzipTmp/linux_x64/unzip exists so Removing it 
+2023-04-10_15-31-19:INFO:File /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-10_15-27-24-PM/unzipTmp/linux_x64 exists so Removing it 
+2023-04-10_15-31-19:INFO:File /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-10_15-27-24-PM/unzipTmp exists so Removing it 
+2023-04-10_15-31-19:INFO:Removing the temporary plugins zip file/oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-10_15-27-24-PM/plugins/linux_x64/13.1.0.0.0_Plugins_226.zip
+2023-04-10_15-31-19:INFO:File exists so Removing it 
+2023-04-10_15-31-19:INFO:updating repository after session ended
+2023-04-10_15-31-19:INFO:DeploymentDaemon -2 :Ending Session
+2023-04-10_15-31-19:INFO:Security and Exectuion context cleared
+2023-04-10_15-31-19:INFO:Closing deployfwk logger
+2023-04-10_16-43-13:INFO:=========USER INPUTS BEAN :[UIBean: deploymentSessionName: ADD_HOST_SYSMAN_10-Apr-2023_15:27:24_WIB sessionId: 2023-04-10_15-27-24-PM ntTmpDir: C:/tmp unixTmpDir /tmp remotePathPropertiesLoc /oracle/app/oracle/middleware/oui/prov/resources omsHome: /oracle/app/oracle/middleware omsHost: bmioem deploymentType: FRESH_AGENT_INSTALL remoteHostInfo: [[RemoteHostsInfo: platformName: linux_x64 platformId: 226 platformDisplayName: Linux x86-64 installBaseDir: /app/em13c port:3872 userName: oracle password: ***** coreDir: agent versionDir: 13.1.0.0.0 groupId: group1 additionalParameters:  remoteHosts: [uat01-mcb-app.bankmuamalat.co.id]]
+2023-04-10_16-43-13:INFO:SSH Port has not changed
+2023-04-10_16-43-13:INFO:Starting Deployment
+2023-04-10_16-43-13:INFO:String product name and descriptionRemotePrereqChecker
+2023-04-10_16-43-13:INFO:======Deployer id :RemotePrereqChecker Deployer Display Name:Remote Prerequisite Checks
+2023-04-10_16-43-13:INFO:String product name and descriptionNewAgentDeployer
+2023-04-10_16-43-13:INFO:======Deployer id :NewAgentDeployer Deployer Display Name:Agent Deployment
+2023-04-10_16-43-13:INFO:===== initJNDIState fix and retry  or retry scenario
+2023-04-10_16-43-13:INFO:=====initJNDIState Found old session
+2023-04-10_16-43-13:INFO:WAITFORUIREFRESH : set to false
+2023-04-10_16-43-13:INFO:Done binding JNDIState for session ID : 2023-04-10_15-27-24-PM
+2023-04-10_16-43-13:INFO:Found JNDI state [JNDIState: DeploySession 
+[ModelDepVo:
+	sessionId:2023-04-10_15-27-24-PM
+	sessionEnded:false
+	 sessionAborted:false
+	 progress bar message:Remote Prerequisite Checks completed with warnings.
+	sessionRootDir_m:/oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-10_15-27-24-PM
+[SessionMetaDataVo:
+	 Session Name: null
+	 install type: null
+	 local prereq status: PASSED
+	 remote prereq status: WARNING
+	 install status: NOT_EXECUTED
+SessionMetaDataVo]
+	 Groups: 
+[AdaGroupVo:
+	 platformDisplayName: Linux x86-64
+	 platformDirName: linux_x64
+	 platformId: 226
+	 username: oracle
+	 groupID: group1
+	 hosts: 
+[AdaHostVo:
+	 hostname: uat01-mcb-app.bankmuamalat.co.id
+	 deployments: 
+[AdaDeploymentVo:
+	 status: PASSED
+[AdaActionVo: actionName: SSHValidations recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: CopyAgentImage recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo]
+[AdaDeploymentVo:
+	 status: WARNING
+[AdaActionVo: actionName: RemotePrereq recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo]
+AdaHostVo]
+AdaGroupVo]
+ModelDepVo]]
+2023-04-10_16-43-13:INFO:Navigation Manager redirecting to the Progress Page:submit
+2023-04-10_16-43-13:INFO:Setting Execution  context locale
+2023-04-10_16-43-13:INFO:Setting security context
+2023-04-10_16-43-13:INFO:PERF:THREADPOOLSIZE:16
+2023-04-10_16-43-13:INFO:PERF:SESSIONNAME:ADD_HOST_SYSMAN_10-Apr-2023_15:27:24_WIB
+2023-04-10_16-43-13:INFO:PERF:HOSTNAMES:[uat01-mcb-app.bankmuamalat.co.id]
+2023-04-10_16-43-13:INFO:PERF:HOSTCOUNT:1
+2023-04-10_16-43-13:INFO:======Creating DC for hostnameuat01-mcb-app.bankmuamalat.co.id
+2023-04-10_16-43-13:INFO:Product RemotePrereqChecker
+2023-04-10_16-43-13:INFO:Retry of initialization and remoteprereq checker should retry on all hosts
+2023-04-10_16-43-13:INFO:Removing key RemotePrereqCheck
+2023-04-10_16-43-13:INFO:Updating the repository after vo creation 
+2023-04-10_16-43-13:INFO:Inside dos2UnixCoversion
+2023-04-10_16-43-13:INFO:Skipping dos2UnixCoversion since current OMS platform is not Windows 
+2023-04-10_16-43-13:INFO:Deploying Product RemotePrereqChecker
+2023-04-10_16-43-13:INFO:Getting Actions for Deployer start RemotePrereqChecker
+2023-04-10_16-43-13:INFO:Getting Actions for Deployer end RemotePrereqChecker
+2023-04-10_16-43-13:INFO:WAITFORUIREFRESH : set to true
+2023-04-10_16-43-13:INFO:AVAILABLE WORKERS 16
+2023-04-10_16-43-13:INFO:PATHS Address oracle.sysman.prov.remoteinterfaces.nativesystem.Paths@16edada4
+2023-04-10_16-43-13:INFO:Retry of initialization and remoteprereq checker should retry on all hosts
+2023-04-10_16-43-13:INFO:======Creating DC for hostnameuat01-mcb-app.bankmuamalat.co.id
+2023-04-10_16-43-13:INFO:======Calling DeploymentContext
+2023-04-10_16-43-13:INFO:Spawning Thread  DeploymentDaemon:Thread-2241050 for hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_16-43-13:INFO:PERF:HOSTNAME:uat01-mcb-app.bankmuamalat.co.id:RemotePrereqChecker_WAIT_TIME:0
+2023-04-10_16-43-13:INFO:DAOVO: Inserting Session table
+2023-04-10_16-43-13:INFO:DeploymentDaemo : Generating deploystate xml
+2023-04-10_16-43-13:INFO:workerReturnTimeInMilliSec 2000 initialUpdateCount 30 maxUpdateCount 1800
+2023-04-10_16-43-13:INFO:Waiting for worker to complete 0 1
+2023-04-10_16-43-13:INFO:Thread for DeploymentDaemon:Thread-2241050 product Remote Prerequisite Checks on host uat01-mcb-app.bankmuamalat.co.id Started
+2023-04-10_16-43-46:INFO:Thread for DeploymentDaemon:Thread-2241050 product Remote Prerequisite Checks on host uat01-mcb-app.bankmuamalat.co.id Ended
+2023-04-10_16-43-46:INFO:WORKER DeploymentDaemon:Thread-2241050 DONE
+2023-04-10_16-43-47:INFO:Clearing Failed Host List
+2023-04-10_16-43-47:INFO:Retry of initialization and remoteprereq checker
+2023-04-10_16-43-47:INFO:Clearing Passed Host List
+2023-04-10_16-43-47:INFO:Adding host uat01-mcb-app.bankmuamalat.co.idfor product Remote Prerequisite Checks to the list of PASSED host
+2023-04-10_16-43-47:INFO:======OVERALL STATUS=======PASSED
+2023-04-10_16-43-47:INFO:Remote Prerequisite Checks OVERALL Status : PASSED
+2023-04-10_16-43-47:INFO:PERF:TOTAL_TIME_RemotePrereqChecker:34018
+2023-04-10_16-43-47:INFO:TOTAL_TIME_RemotePrereqChecker:0: hrs 0: mins 34 sec
+2023-04-10_16-43-47:INFO:Product RemotePrereqChecker final status PASSED : true
+2023-04-10_16-43-47:INFO:updating repository after product RemotePrereqChecker completed successfully
+2023-04-10_16-43-47:INFO:Deploying Product NewAgentDeployer
+2023-04-10_16-43-47:INFO:Getting Actions for Deployer start NewAgentDeployer
+2023-04-10_16-43-47:INFO:Getting Actions for Deployer end NewAgentDeployer
+2023-04-10_16-43-47:INFO:WAITFORUIREFRESH : set to true
+2023-04-10_16-43-47:INFO:AVAILABLE WORKERS 16
+2023-04-10_16-43-47:INFO:PATHS Address oracle.sysman.prov.remoteinterfaces.nativesystem.Paths@4ff0b90e
+2023-04-10_16-43-47:INFO:Retry of initialization and remoteprereq checker should retry on all hosts
+2023-04-10_16-43-47:INFO:======Creating DC for hostnameuat01-mcb-app.bankmuamalat.co.id
+2023-04-10_16-43-47:INFO:======Calling DeploymentContext
+2023-04-10_16-43-47:INFO:Spawning Thread  DeploymentDaemon:Thread-2241050 for hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_16-43-47:INFO:PERF:HOSTNAME:uat01-mcb-app.bankmuamalat.co.id:NewAgentDeployer_WAIT_TIME:1
+2023-04-10_16-43-47:INFO:DAOVO: Inserting Session table
+2023-04-10_16-43-47:INFO:DeploymentDaemo : Generating deploystate xml
+2023-04-10_16-43-47:INFO:workerReturnTimeInMilliSec 2000 initialUpdateCount 30 maxUpdateCount 1800
+2023-04-10_16-43-47:INFO:Thread for DeploymentDaemon:Thread-2241050 product Agent Deployment on host uat01-mcb-app.bankmuamalat.co.id Started
+2023-04-10_16-43-47:INFO:Waiting for worker to complete 0 1
+2023-04-10_16-44-47:INFO:Updating the repository inside deployInParallel 30
+2023-04-10_16-45-10:INFO:Thread for DeploymentDaemon:Thread-2241050 product Agent Deployment on host uat01-mcb-app.bankmuamalat.co.id Ended
+2023-04-10_16-45-10:INFO:WORKER DeploymentDaemon:Thread-2241050 DONE
+2023-04-10_16-45-11:INFO:Clearing Failed Host List
+2023-04-10_16-45-11:INFO:Retry of initialization and remoteprereq checker
+2023-04-10_16-45-11:INFO:Clearing Passed Host List
+2023-04-10_16-45-11:INFO:Adding host uat01-mcb-app.bankmuamalat.co.idfor product Agent Deployment to the list of FAILED host
+2023-04-10_16-45-11:INFO:======OVERALL STATUS=======FAILED
+2023-04-10_16-45-11:INFO:Agent Deployment OVERALL Status : FAILED
+2023-04-10_16-45-11:INFO:Deployment failed on all the hosts
+2023-04-10_16-45-11:INFO:PERF:TOTAL_TIME_NewAgentDeployer:84032
+2023-04-10_16-45-11:INFO:TOTAL_TIME_NewAgentDeployer:0: hrs 1: mins 24 sec
+2023-04-10_16-45-11:INFO:Product NewAgentDeployer final status FAILED : false
+2023-04-10_16-45-11:INFO: Breaking product deployment since previous product NewAgentDeployer status was false or session was aborted false
+2023-04-10_16-45-11:INFO:Deploying Final product 
+2023-04-10_16-45-11:INFO:Deleting Unzip on OMS
+2023-04-10_16-45-11:INFO:File /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-10_15-27-24-PM/unzipTmp/linux_x64/unzip does not exist 
+2023-04-10_16-45-11:INFO:File /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-10_15-27-24-PM/unzipTmp/linux_x64/unzip does not exist 
+2023-04-10_16-45-11:INFO:File /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-10_15-27-24-PM/unzipTmp does not exist 
+2023-04-10_16-45-11:INFO:Removing the temporary plugins zip file/oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-10_15-27-24-PM/plugins/linux_x64/13.1.0.0.0_Plugins_226.zip
+2023-04-10_16-45-11:INFO:updating repository after session ended
+2023-04-10_16-45-11:INFO:DeploymentDaemon -2 :Ending Session
+2023-04-10_16-45-11:INFO:Security and Exectuion context cleared
+2023-04-10_16-45-11:INFO:Closing deployfwk logger

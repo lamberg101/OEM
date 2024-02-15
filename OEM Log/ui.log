@@ -1,0 +1,260 @@
+2023-04-10_15-29-41:INFO:Got UI Logger Successfully 
+2023-04-10_15-29-41:INFO:Got UI Logger Successfully in populateCurrentSessionData 
+2023-04-10_15-29-41:INFO:==================START Inside  populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_15-29-41:INFO:waitForRefresh flag in deployment in progress page model true
+2023-04-10_15-29-41:INFO:group is not null, so break the refresh loop
+2023-04-10_15-29-41:INFO:Group group1
+2023-04-10_15-29-41:INFO:Creating Parent Platform Linux x86-64
+2023-04-10_15-29-41:INFO: HOST  : uat01-mcb-app.bankmuamalat.co.id Intialization : NULL  Remote Prereq status : NULL INSTALL status : NULL 
+2023-04-10_15-29-41:INFO:host is not selected setting first host:uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_15-29-41:INFO:Inside setDetailsBean :groupid group1 hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_15-29-41:INFO:Dep vo map for host uat01-mcb-app.bankmuamalat.co.idis {}
+2023-04-10_15-29-41:INFO:Inside Build Progress Bar  : Session Ended false Refresh Frequency 30000 Progress Bar Message Initialization in Progress
+2023-04-10_15-29-41:INFO:==================END populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_15-29-41:INFO:Refreshing UI for the first Time
+2023-04-10_15-30-12:INFO:ProgressListener refresh called
+2023-04-10_15-30-12:INFO:Got UI Logger Successfully in populateCurrentSessionData 
+2023-04-10_15-30-12:INFO:==================START Inside  populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_15-30-12:INFO:waitForRefresh flag in deployment in progress page model true
+2023-04-10_15-30-12:INFO:group is not null, so break the refresh loop
+2023-04-10_15-30-12:INFO:Group group1
+2023-04-10_15-30-12:INFO:Creating Parent Platform Linux x86-64
+2023-04-10_15-30-12:INFO: HOST  : uat01-mcb-app.bankmuamalat.co.id Intialization : IN_PROGRESS Remote Prereq status : NULL INSTALL status : NULL 
+2023-04-10_15-30-12:INFO:Inside setDetailsBean :groupid group1 hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_15-30-12:INFO:Dep vo map for host uat01-mcb-app.bankmuamalat.co.idis {Initialization=
+[AdaDeploymentVo:
+	 status: IN_PROGRESS
+[AdaActionVo: actionName: SSHValidations recommendation: null errorStream: null status: IN_PROGRESS outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: CopyAgentImage recommendation: null errorStream: null status: NOT_EXECUTED outStream: null
+AdaActionVo]
+AdaDeploymentVo]}
+2023-04-10_15-30-12:INFO:Inside Build Progress Bar  : Session Ended false Refresh Frequency 30000 Progress Bar Message Initialization in Progress
+2023-04-10_15-30-12:INFO:==================END populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_15-30-42:INFO:ProgressListener refresh called
+2023-04-10_15-30-42:INFO:Got UI Logger Successfully in populateCurrentSessionData 
+2023-04-10_15-30-42:INFO:==================START Inside  populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_15-30-42:INFO:waitForRefresh flag in deployment in progress page model true
+2023-04-10_15-30-42:INFO:group is not null, so break the refresh loop
+2023-04-10_15-30-42:INFO:Group group1
+2023-04-10_15-30-42:INFO:Creating Parent Platform Linux x86-64
+2023-04-10_15-30-42:INFO: HOST  : uat01-mcb-app.bankmuamalat.co.id Intialization : IN_PROGRESS Remote Prereq status : NULL INSTALL status : NULL 
+2023-04-10_15-30-42:INFO:Inside setDetailsBean :groupid group1 hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_15-30-42:INFO:Dep vo map for host uat01-mcb-app.bankmuamalat.co.idis {Initialization=
+[AdaDeploymentVo:
+	 status: IN_PROGRESS
+[AdaActionVo: actionName: SSHValidations recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: CopyAgentImage recommendation: null errorStream: null status: IN_PROGRESS outStream: null
+AdaActionVo]
+AdaDeploymentVo]}
+2023-04-10_15-30-42:INFO:Inside Build Progress Bar  : Session Ended false Refresh Frequency 30000 Progress Bar Message Initialization in Progress
+2023-04-10_15-30-42:INFO:==================END populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_15-31-12:INFO:ProgressListener refresh called
+2023-04-10_15-31-12:INFO:Got UI Logger Successfully in populateCurrentSessionData 
+2023-04-10_15-31-12:INFO:==================START Inside  populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_15-31-12:INFO:waitForRefresh flag in deployment in progress page model true
+2023-04-10_15-31-12:INFO:group is not null, so break the refresh loop
+2023-04-10_15-31-12:INFO:Group group1
+2023-04-10_15-31-12:INFO:Creating Parent Platform Linux x86-64
+2023-04-10_15-31-12:INFO: HOST  : uat01-mcb-app.bankmuamalat.co.id Intialization : PASSED Remote Prereq status : IN_PROGRESS INSTALL status : NULL 
+2023-04-10_15-31-12:INFO:Inside setDetailsBean :groupid group1 hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_15-31-12:INFO:Dep vo map for host uat01-mcb-app.bankmuamalat.co.idis {Initialization=
+[AdaDeploymentVo:
+	 status: PASSED
+[AdaActionVo: actionName: SSHValidations recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: CopyAgentImage recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo], RemotePrerequisteCheck=
+[AdaDeploymentVo:
+	 status: IN_PROGRESS
+[AdaActionVo: actionName: RemotePrereq recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo]}
+2023-04-10_15-31-12:INFO:Inside Build Progress Bar  : Session Ended false Refresh Frequency 30000 Progress Bar Message Remote Prerequisite Checks in Progress
+2023-04-10_15-31-12:INFO:==================END populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_15-31-42:INFO:ProgressListener refresh called
+2023-04-10_15-31-42:INFO:Got UI Logger Successfully in populateCurrentSessionData 
+2023-04-10_15-31-42:INFO:==================START Inside  populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_15-31-42:INFO:waitForRefresh flag in deployment in progress page model true
+2023-04-10_15-31-42:INFO:group is not null, so break the refresh loop
+2023-04-10_15-31-42:INFO:Group group1
+2023-04-10_15-31-42:INFO:Creating Parent Platform Linux x86-64
+2023-04-10_15-31-42:INFO: HOST  : uat01-mcb-app.bankmuamalat.co.id Intialization : PASSED Remote Prereq status : WARNING INSTALL status : NULL 
+2023-04-10_15-31-42:INFO:Inside setDetailsBean :groupid group1 hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_15-31-42:INFO:Dep vo map for host uat01-mcb-app.bankmuamalat.co.idis {Initialization=
+[AdaDeploymentVo:
+	 status: PASSED
+[AdaActionVo: actionName: SSHValidations recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: CopyAgentImage recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo], RemotePrerequisteCheck=
+[AdaDeploymentVo:
+	 status: WARNING
+[AdaActionVo: actionName: RemotePrereq recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo]}
+2023-04-10_15-31-42:INFO:Inside Build Progress Bar  : Session Ended true Refresh Frequency 30000 Progress Bar Message Remote Prerequisite Checks completed with warnings.
+2023-04-10_15-31-42:INFO:remote  prereqs failed/images/warning.png Warning
+2023-04-10_15-31-42:INFO:Since all nodes failed. Disable Continue ignoring failed host
+2023-04-10_15-31-42:INFO:==================END populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_15-31-42:INFO:Removing ui logger for session 2023-04-10_15-27-24-PM
+2023-04-10_16-43-13:INFO:Got UI Logger Successfully in populateCurrentSessionData 
+2023-04-10_16-43-13:INFO:==================START Inside  populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_16-43-13:INFO:waitForRefresh flag in deployment in progress page model false
+2023-04-10_16-43-13:INFO:waitForRefresh flag in deployment in progress page model true
+2023-04-10_16-43-13:INFO:group is not null, so break the refresh loop
+2023-04-10_16-43-13:INFO:Group group1
+2023-04-10_16-43-13:INFO:Creating Parent Platform Linux x86-64
+2023-04-10_16-43-13:INFO: HOST  : uat01-mcb-app.bankmuamalat.co.id Intialization : PASSED Remote Prereq status : NULL INSTALL status : NULL 
+2023-04-10_16-43-13:INFO:Inside setDetailsBean :groupid group1 hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_16-43-13:INFO:Dep vo map for host uat01-mcb-app.bankmuamalat.co.idis {Initialization=
+[AdaDeploymentVo:
+	 status: PASSED
+[AdaActionVo: actionName: SSHValidations recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: CopyAgentImage recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo]}
+2023-04-10_16-43-13:INFO:Inside Build Progress Bar  : Session Ended false Refresh Frequency 30000 Progress Bar Message Remote Prerequisite Checks in Progress
+2023-04-10_16-43-13:INFO:==================END populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_16-43-43:INFO:ProgressListener refresh called
+2023-04-10_16-43-43:INFO:Got UI Logger Successfully in populateCurrentSessionData 
+2023-04-10_16-43-43:INFO:==================START Inside  populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_16-43-43:INFO:waitForRefresh flag in deployment in progress page model true
+2023-04-10_16-43-43:INFO:group is not null, so break the refresh loop
+2023-04-10_16-43-43:INFO:Group group1
+2023-04-10_16-43-43:INFO:Creating Parent Platform Linux x86-64
+2023-04-10_16-43-43:INFO: HOST  : uat01-mcb-app.bankmuamalat.co.id Intialization : PASSED Remote Prereq status : IN_PROGRESS INSTALL status : NULL 
+2023-04-10_16-43-43:INFO:Inside setDetailsBean :groupid group1 hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_16-43-43:INFO:Dep vo map for host uat01-mcb-app.bankmuamalat.co.idis {Initialization=
+[AdaDeploymentVo:
+	 status: PASSED
+[AdaActionVo: actionName: SSHValidations recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: CopyAgentImage recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo], RemotePrerequisteCheck=
+[AdaDeploymentVo:
+	 status: IN_PROGRESS
+[AdaActionVo: actionName: RemotePrereq recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo]}
+2023-04-10_16-43-43:INFO:Inside Build Progress Bar  : Session Ended false Refresh Frequency 30000 Progress Bar Message Remote Prerequisite Checks in Progress
+2023-04-10_16-43-43:INFO:==================END populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_16-44-13:INFO:ProgressListener refresh called
+2023-04-10_16-44-13:INFO:Got UI Logger Successfully in populateCurrentSessionData 
+2023-04-10_16-44-13:INFO:==================START Inside  populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_16-44-13:INFO:waitForRefresh flag in deployment in progress page model true
+2023-04-10_16-44-13:INFO:group is not null, so break the refresh loop
+2023-04-10_16-44-13:INFO:Group group1
+2023-04-10_16-44-13:INFO:Creating Parent Platform Linux x86-64
+2023-04-10_16-44-13:INFO: HOST  : uat01-mcb-app.bankmuamalat.co.id Intialization : PASSED Remote Prereq status : PASSED INSTALL status : IN_PROGRESS
+2023-04-10_16-44-13:INFO:Inside setDetailsBean :groupid group1 hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_16-44-13:INFO:Dep vo map for host uat01-mcb-app.bankmuamalat.co.idis {Initialization=
+[AdaDeploymentVo:
+	 status: PASSED
+[AdaActionVo: actionName: SSHValidations recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: CopyAgentImage recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo], RemotePrerequisteCheck=
+[AdaDeploymentVo:
+	 status: PASSED
+[AdaActionVo: actionName: RemotePrereq recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo], Installation=
+[AdaDeploymentVo:
+	 status: IN_PROGRESS
+[AdaActionVo: actionName: RunRootSH recommendation: null errorStream: null status: NOT_EXECUTED outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: CollectLog recommendation: null errorStream: null status: NOT_EXECUTED outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: Install recommendation: null errorStream: null status: IN_PROGRESS outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: SecureAgent recommendation: null errorStream: null status: NOT_EXECUTED outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: Cleanup recommendation: null errorStream: null status: NOT_EXECUTED outStream: null
+AdaActionVo]
+AdaDeploymentVo]}
+2023-04-10_16-44-13:INFO:Inside Build Progress Bar  : Session Ended false Refresh Frequency 30000 Progress Bar Message Agent Deployment in Progress
+2023-04-10_16-44-13:INFO:==================END populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_16-44-43:INFO:ProgressListener refresh called
+2023-04-10_16-44-43:INFO:Got UI Logger Successfully in populateCurrentSessionData 
+2023-04-10_16-44-43:INFO:==================START Inside  populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_16-44-43:INFO:waitForRefresh flag in deployment in progress page model true
+2023-04-10_16-44-43:INFO:group is not null, so break the refresh loop
+2023-04-10_16-44-43:INFO:Group group1
+2023-04-10_16-44-43:INFO:Creating Parent Platform Linux x86-64
+2023-04-10_16-44-43:INFO: HOST  : uat01-mcb-app.bankmuamalat.co.id Intialization : PASSED Remote Prereq status : PASSED INSTALL status : IN_PROGRESS
+2023-04-10_16-44-43:INFO:Inside setDetailsBean :groupid group1 hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_16-44-43:INFO:Dep vo map for host uat01-mcb-app.bankmuamalat.co.idis {Initialization=
+[AdaDeploymentVo:
+	 status: PASSED
+[AdaActionVo: actionName: SSHValidations recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: CopyAgentImage recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo], RemotePrerequisteCheck=
+[AdaDeploymentVo:
+	 status: PASSED
+[AdaActionVo: actionName: RemotePrereq recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo], Installation=
+[AdaDeploymentVo:
+	 status: IN_PROGRESS
+[AdaActionVo: actionName: RunRootSH recommendation: null errorStream: null status: NOT_EXECUTED outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: CollectLog recommendation: null errorStream: null status: NOT_EXECUTED outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: Install recommendation: null errorStream: null status: IN_PROGRESS outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: SecureAgent recommendation: null errorStream: null status: NOT_EXECUTED outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: Cleanup recommendation: null errorStream: null status: NOT_EXECUTED outStream: null
+AdaActionVo]
+AdaDeploymentVo]}
+2023-04-10_16-44-43:INFO:Inside Build Progress Bar  : Session Ended false Refresh Frequency 30000 Progress Bar Message Agent Deployment in Progress
+2023-04-10_16-44-43:INFO:==================END populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_16-45-13:INFO:ProgressListener refresh called
+2023-04-10_16-45-13:INFO:Got UI Logger Successfully in populateCurrentSessionData 
+2023-04-10_16-45-13:INFO:==================START Inside  populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_16-45-13:INFO:waitForRefresh flag in deployment in progress page model true
+2023-04-10_16-45-13:INFO:group is not null, so break the refresh loop
+2023-04-10_16-45-13:INFO:Group group1
+2023-04-10_16-45-13:INFO:Creating Parent Platform Linux x86-64
+2023-04-10_16-45-13:INFO: HOST  : uat01-mcb-app.bankmuamalat.co.id Intialization : PASSED Remote Prereq status : PASSED INSTALL status : FAILED
+2023-04-10_16-45-13:INFO:Inside setDetailsBean :groupid group1 hostname uat01-mcb-app.bankmuamalat.co.id
+2023-04-10_16-45-13:INFO:Dep vo map for host uat01-mcb-app.bankmuamalat.co.idis {Initialization=
+[AdaDeploymentVo:
+	 status: PASSED
+[AdaActionVo: actionName: SSHValidations recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: CopyAgentImage recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo], RemotePrerequisteCheck=
+[AdaDeploymentVo:
+	 status: PASSED
+[AdaActionVo: actionName: RemotePrereq recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+AdaDeploymentVo], Installation=
+[AdaDeploymentVo:
+	 status: FAILED
+[AdaActionVo: actionName: RunRootSH recommendation: null errorStream: null status: NOT_EXECUTED outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: CollectLog recommendation: null errorStream: null status: SUCCESS outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: Install recommendation: Fix the cause of the error and retry the operation errorStream: Error Message:Not Available<br><br> Exit Code :0 status: FAILED outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: SecureAgent recommendation: null errorStream: null status: NOT_EXECUTED outStream: null
+AdaActionVo]
+[AdaActionVo: actionName: Cleanup recommendation: null errorStream: null status: NOT_EXECUTED outStream: null
+AdaActionVo]
+AdaDeploymentVo]}
+2023-04-10_16-45-13:INFO:Inside Build Progress Bar  : Session Ended true Refresh Frequency 30000 Progress Bar Message Agent Deployment Failed
+2023-04-10_16-45-13:INFO:install  failed/images/title_error.png Failed
+2023-04-10_16-45-13:INFO:Since all nodes failed. Disable Continue ignoring failed host
+2023-04-10_16-45-13:INFO:==================END populateCurrentSessionData ==================:2023-04-10_15-27-24-PM
+2023-04-10_16-45-13:INFO:Removing ui logger for session 2023-04-10_15-27-24-PM

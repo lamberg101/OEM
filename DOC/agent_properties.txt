@@ -1,0 +1,7 @@
+oracle.installer.removeAllFiles=true
+oracle.installer.warningonremovefiles=false
+oracle.installer.system_env_limit.208.5.1=8191
+oracle.installer.system_env_limit.912.5.1=2048
+postCopyScript.install.loc=agentPostInstall_gc.sh
+postCopyScript.install.runAsRoot=false
+postCopyScript.install.instantiate=true

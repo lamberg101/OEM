@@ -1,0 +1,802 @@
+2023-04-27_14-20-52:INFO:======================================Initialization START ====================================
+2023-04-27_14-20-52:INFO:Creating instance of ClusterBase Ops for hostnamemcbdbconsuat
+2023-04-27_14-20-53:INFO:Retry Count 5 sleep interval 250
+2023-04-27_14-20-53:INFO:Setting security contextSYSMAN
+2023-04-27_14-20-53:INFO:Setting locale succeeded in BaseDeployerOps
+2023-04-27_14-20-53:INFO:[action name=SSHValidations, action Description=Remote Validations, order=100, skip=false, executeAlways=false, status=null, 
+
+2023-04-27_14-20-53:INFO:[action name=SSHSetup, action Description=SSH Setup, order=200, skip=false, executeAlways=false, status=null, 
+
+2023-04-27_14-20-53:INFO:skipping ssh setup  since its jsch plugin
+2023-04-27_14-20-53:INFO: Skipping action SSHSetup based on inputs
+2023-04-27_14-20-53:INFO:[action name=CopyAgentImage, action Description=Transferring Agent Software to Destination Host, order=300, skip=false, executeAlways=false, status=null, 
+
+2023-04-27_14-20-53:INFO: ACTIONS : SSHValidations
+2023-04-27_14-20-53:INFO: ACTIONS : CopyAgentImage
+2023-04-27_14-20-53:INFO:============Creating Deployment Vo for key : Initialization and setting status as NOT_EXECUTED
+2023-04-27_14-20-53:INFO:=====Creating Action Vo for actionSSHValidations
+2023-04-27_14-20-53:INFO:=====Creating Action Vo for actionCopyAgentImage
+2023-04-27_14-20-53:INFO:deploymentVo has now status: NOT_EXECUTED
+2023-04-27_14-20-53:INFO:==SUDO EXISTS false SUDO PRIV false
+2023-04-27_14-20-53:INFO:====CALLING ACTIONdoSSHValidations
+2023-04-27_14-20-53:INFO:updating status IN_PROGRESS for action name SSHValidations with key: SSHValidations
+2023-04-27_14-20-53:INFO:action:NodesAliveperform:true
+2023-04-27_14-20-53:INFO:===VALIDATION===:Checking for Nodes Alive 
+2023-04-27_14-20-53:INFO:RESULT 0
+2023-04-27_14-20-53:INFO:====CALLING ACTIONdoNodesAlive
+2023-04-27_14-20-53:INFO:action:RemotePasswordCheckperform:true
+2023-04-27_14-20-53:INFO:===VALIDATION===:Checking Password Validity on target nodes
+2023-04-27_14-20-53:INFO:NODES=mcbdbconsuat Retry Count 5
+2023-04-27_14-20-53:INFO:retry count : 1
+2023-04-27_14-20-53:INFO:Running cmd /bin/true on node mcbdbconsuat
+2023-04-27_14-20-53:INFO:ssh connect timeout 60000
+2023-04-27_14-20-54:INFO:Exit Code : 0
+2023-04-27_14-20-54:INFO:Error : 
+2023-04-27_14-20-54:INFO:Out:
+2023-04-27_14-20-54:INFO:Checking for password validity on target nodes : PASSED
+2023-04-27_14-20-54:INFO:RESULT 0
+2023-04-27_14-20-54:INFO:====CALLING ACTIONdoRemotePasswordCheck
+2023-04-27_14-20-54:INFO:action:ShPathCheckperform:true
+2023-04-27_14-20-54:INFO:===VALIDATION===:Checking SH_PATH on target nodes
+2023-04-27_14-20-54:INFO:isWrongShPath:remotePathPropertiesLoc:/oracle/app/oracle/middleware/oui/prov/resources Platform id:212
+2023-04-27_14-20-54:INFO:NODES=mcbdbconsuat
+2023-04-27_14-20-54:INFO:Running cmd /bin/sh -c /bin/true on node mcbdbconsuat
+2023-04-27_14-20-54:INFO:Action description Execution of command /bin/sh -c /bin/true  on host mcbdbconsuat
+2023-04-27_14-20-54:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-20-55:INFO:/bin/sh -c /bin/true execution was successful on host mcbdbconsuat
+2023-04-27_14-20-55:INFO:output: 
+2023-04-27_14-20-55:INFO:error-stream: 
+2023-04-27_14-20-55:INFO:exit-code: 0
+2023-04-27_14-20-55:INFO:Checking SH_PATH on target nodes : PASSED
+2023-04-27_14-20-55:INFO:RESULT 0
+2023-04-27_14-20-55:INFO:====CALLING ACTIONdoShPathCheck
+2023-04-27_14-20-55:INFO:action:BannerCheckperform:true
+2023-04-27_14-20-55:INFO:Calling Wrapper Banner Check
+2023-04-27_14-20-55:INFO:===Validation===:Banner Check on target nodes for login shell :true
+2023-04-27_14-20-55:INFO:Banner Command to use:/bin/true
+2023-04-27_14-20-55:INFO:NODES=mcbdbconsuat
+2023-04-27_14-20-55:INFO:ITERATION :1
+2023-04-27_14-20-56:INFO:Exit Code : 0
+2023-04-27_14-20-56:INFO:Error : 
+2023-04-27_14-20-56:INFO:Error(filtered) : 
+2023-04-27_14-20-56:INFO:Out:
+2023-04-27_14-20-56:INFO:Out(filtered) :
+2023-04-27_14-20-56:INFO:ITERATION :2
+2023-04-27_14-20-57:INFO:Exit Code : 0
+2023-04-27_14-20-57:INFO:Error : 
+2023-04-27_14-20-57:INFO:Error(filtered) : 
+2023-04-27_14-20-57:INFO:Out:
+2023-04-27_14-20-57:INFO:Out(filtered) :
+2023-04-27_14-20-57:INFO:ITERATION :3
+2023-04-27_14-20-58:INFO:Exit Code : 0
+2023-04-27_14-20-58:INFO:Error : 
+2023-04-27_14-20-58:INFO:Error(filtered) : 
+2023-04-27_14-20-58:INFO:Out:
+2023-04-27_14-20-58:INFO:Out(filtered) :
+2023-04-27_14-20-58:INFO:ITERATION Considered for prereq :3
+2023-04-27_14-20-58:INFO:Banner Check on target nodes : PASSED
+2023-04-27_14-20-58:INFO:===Validation===:Banner Check on target nodes for login shell :false
+2023-04-27_14-20-58:INFO:isWrongShPath:remotePathPropertiesLoc:/oracle/app/oracle/middleware/oui/prov/resources Platform id:212
+2023-04-27_14-20-58:INFO:SH_PATH:/bin/sh SH_ARGS:-c
+2023-04-27_14-20-58:INFO:Banner Command to use:/bin/sh -c /bin/true
+2023-04-27_14-20-58:INFO:NODES=mcbdbconsuat
+2023-04-27_14-20-58:INFO:ITERATION :1
+2023-04-27_14-20-59:INFO:Exit Code : 0
+2023-04-27_14-20-59:INFO:Error : 
+2023-04-27_14-20-59:INFO:Error(filtered) : 
+2023-04-27_14-20-59:INFO:Out:
+2023-04-27_14-20-59:INFO:Out(filtered) :
+2023-04-27_14-20-59:INFO:ITERATION :2
+2023-04-27_14-21-00:INFO:Exit Code : 0
+2023-04-27_14-21-00:INFO:Error : 
+2023-04-27_14-21-00:INFO:Error(filtered) : 
+2023-04-27_14-21-00:INFO:Out:
+2023-04-27_14-21-00:INFO:Out(filtered) :
+2023-04-27_14-21-00:INFO:ITERATION :3
+2023-04-27_14-21-01:INFO:Exit Code : 0
+2023-04-27_14-21-01:INFO:Error : 
+2023-04-27_14-21-01:INFO:Error(filtered) : 
+2023-04-27_14-21-01:INFO:Out:
+2023-04-27_14-21-01:INFO:Out(filtered) :
+2023-04-27_14-21-01:INFO:ITERATION Considered for prereq :3
+2023-04-27_14-21-01:INFO:Banner Check on target nodes : PASSED
+2023-04-27_14-21-01:INFO:RESULT 0
+2023-04-27_14-21-01:INFO:====CALLING ACTIONdoBannerCheck
+2023-04-27_14-21-01:INFO:action:OPCHostNameCheckperform:true
+2023-04-27_14-21-01:INFO:===Validation===: Checking OPC Host Name
+2023-04-27_14-21-01:INFO:Skipping OPC check for normal em agent deployment.
+2023-04-27_14-21-01:INFO:RESULT 0
+2023-04-27_14-21-01:INFO:====CALLING ACTIONdoOPCHostNameCheck
+2023-04-27_14-21-01:INFO:action:PDPSettingsCheckperform:true
+2023-04-27_14-21-01:INFO:===VALIDATION===:Checking PDP settings on target nodes
+2023-04-27_14-21-01:INFO: Run As not set in the named creds.
+2023-04-27_14-21-01:INFO:RESULT 0
+2023-04-27_14-21-01:INFO:====CALLING ACTIONdoPDPSettingsCheck
+2023-04-27_14-21-01:INFO:action:PreDeployScriptperform:true
+2023-04-27_14-21-01:INFO:skipping predeploy script since user has not specified one
+2023-04-27_14-21-01:INFO:RESULT 0
+2023-04-27_14-21-01:INFO:====CALLING ACTIONdoPreDeployScript
+2023-04-27_14-21-01:INFO:action:PreInstallScriptCheckperform:true
+2023-04-27_14-21-01:INFO:No Pre install script specified 
+2023-04-27_14-21-01:INFO:RESULT 0
+2023-04-27_14-21-01:INFO:====CALLING ACTIONdoPreInstallScriptCheck
+2023-04-27_14-21-01:INFO:action:PostInstallScriptCheckperform:true
+2023-04-27_14-21-01:INFO:No Post install script specified 
+2023-04-27_14-21-01:INFO:RESULT 0
+2023-04-27_14-21-01:INFO:====CALLING ACTIONdoPostInstallScriptCheck
+2023-04-27_14-21-01:INFO:action:MasterAgentValidityCheckperform:true
+2023-04-27_14-21-01:INFO:Skipping doMasterAgentValidityCheck  as it is not a NFS install 
+2023-04-27_14-21-01:INFO:RESULT 0
+2023-04-27_14-21-01:INFO:====CALLING ACTIONdoMasterAgentValidityCheck
+2023-04-27_14-21-01:INFO:action:RemotePathCheckperform:true
+2023-04-27_14-21-01:INFO:===Validation===: Checking Remote Paths on target nodes
+2023-04-27_14-21-01:INFO:isRemotePathsExist:remotePathPropertiesLoc:/oracle/app/oracle/middleware/oui/prov/resources Platform id:212
+2023-04-27_14-21-02:INFO:Retrieving value of SH_PATH for  mcbdbconsuat
+2023-04-27_14-21-02:INFO:Checking if file SH_PATH:/bin/sh exists on mcbdbconsuat
+2023-04-27_14-21-02:INFO:Setting file existence flag to -f for path SH_PATH
+2023-04-27_14-21-02:INFO:Running cmd /bin/sh -c 'if [ -f /bin/sh ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-21-02:INFO:Action description Execution of command /bin/sh -c 'if [ -f /bin/sh ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-02:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-04:INFO:/bin/sh -c 'if [ -f /bin/sh ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-04:INFO:output: 
+2023-04-27_14-21-04:INFO:error-stream: 
+2023-04-27_14-21-04:INFO:exit-code: 0
+2023-04-27_14-21-04:INFO:Retrieving value of SSH_PATH for  mcbdbconsuat
+2023-04-27_14-21-04:INFO:Checking if file SSH_PATH:/usr/bin/ssh exists on mcbdbconsuat
+2023-04-27_14-21-04:INFO:Setting file existence flag to -f for path SSH_PATH
+2023-04-27_14-21-04:INFO:Running cmd /bin/sh -c 'if [ -f /usr/bin/ssh ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-21-04:INFO:Action description Execution of command /bin/sh -c 'if [ -f /usr/bin/ssh ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-04:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-05:INFO:/bin/sh -c 'if [ -f /usr/bin/ssh ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-05:INFO:output: 
+2023-04-27_14-21-05:INFO:error-stream: 
+2023-04-27_14-21-05:INFO:exit-code: 0
+2023-04-27_14-21-05:INFO:Retrieving value of SCP_PATH for  mcbdbconsuat
+2023-04-27_14-21-05:INFO:Checking if file SCP_PATH:/usr/bin/scp exists on mcbdbconsuat
+2023-04-27_14-21-05:INFO:Setting file existence flag to -f for path SCP_PATH
+2023-04-27_14-21-05:INFO:Running cmd /bin/sh -c 'if [ -f /usr/bin/scp ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-21-05:INFO:Action description Execution of command /bin/sh -c 'if [ -f /usr/bin/scp ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-05:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-06:INFO:/bin/sh -c 'if [ -f /usr/bin/scp ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-06:INFO:output: 
+2023-04-27_14-21-06:INFO:error-stream: 
+2023-04-27_14-21-06:INFO:exit-code: 0
+2023-04-27_14-21-06:INFO:Retrieving value of CHMOD_PATH for  mcbdbconsuat
+2023-04-27_14-21-06:INFO:Checking if file CHMOD_PATH:/bin/chmod exists on mcbdbconsuat
+2023-04-27_14-21-06:INFO:Setting file existence flag to -f for path CHMOD_PATH
+2023-04-27_14-21-06:INFO:Running cmd /bin/sh -c 'if [ -f /bin/chmod ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-21-06:INFO:Action description Execution of command /bin/sh -c 'if [ -f /bin/chmod ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-06:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-07:INFO:/bin/sh -c 'if [ -f /bin/chmod ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-07:INFO:output: 
+2023-04-27_14-21-07:INFO:error-stream: 
+2023-04-27_14-21-07:INFO:exit-code: 0
+2023-04-27_14-21-07:INFO:Retrieving value of MKDIR_PATH for  mcbdbconsuat
+2023-04-27_14-21-07:INFO:Checking if file MKDIR_PATH:/bin/mkdir exists on mcbdbconsuat
+2023-04-27_14-21-07:INFO:Setting file existence flag to -f for path MKDIR_PATH
+2023-04-27_14-21-07:INFO:Running cmd /bin/sh -c 'if [ -f /bin/mkdir ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-21-07:INFO:Action description Execution of command /bin/sh -c 'if [ -f /bin/mkdir ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-07:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-08:INFO:/bin/sh -c 'if [ -f /bin/mkdir ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-08:INFO:output: 
+2023-04-27_14-21-08:INFO:error-stream: 
+2023-04-27_14-21-08:INFO:exit-code: 0
+2023-04-27_14-21-08:INFO:Retrieving value of RM_PATH for  mcbdbconsuat
+2023-04-27_14-21-08:INFO:Checking if file RM_PATH:/bin/rm exists on mcbdbconsuat
+2023-04-27_14-21-08:INFO:Setting file existence flag to -f for path RM_PATH
+2023-04-27_14-21-08:INFO:Running cmd /bin/sh -c 'if [ -f /bin/rm ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-21-08:INFO:Action description Execution of command /bin/sh -c 'if [ -f /bin/rm ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-08:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-09:INFO:/bin/sh -c 'if [ -f /bin/rm ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-09:INFO:output: 
+2023-04-27_14-21-09:INFO:error-stream: 
+2023-04-27_14-21-09:INFO:exit-code: 0
+2023-04-27_14-21-09:INFO:Not checking LS_PATH on unix
+2023-04-27_14-21-09:INFO:Host path error message for all nodes :
+2023-04-27_14-21-09:INFO:Checking Remote Paths on target nodes : PASSED
+2023-04-27_14-21-09:INFO:RESULT 0
+2023-04-27_14-21-09:INFO:====CALLING ACTIONdoRemotePathCheck
+2023-04-27_14-21-09:INFO:action:InstallBaseDirectoryWritableAndEmptyCheckperform:true
+2023-04-27_14-21-09:INFO: ===VALIDATION===:Checking install base Dir is writable and empty/oracle/app/em13c
+2023-04-27_14-21-09:INFO:Dir Writable Check/oracle/app/em13c
+2023-04-27_14-21-09:INFO:doDirWritableCheck:remotePathPropertiesLoc:/oracle/app/oracle/middleware/oui/prov/resources Platform id:212
+2023-04-27_14-21-09:INFO:Calling formFileTestCmd with dir:/oracle/app/em13c
+2023-04-27_14-21-09:INFO:Checking if dir /oracle/app/em13c exists on mcbdbconsuat
+2023-04-27_14-21-09:INFO:Running cmd /bin/sh -c 'if [ -d /oracle/app/em13c ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-21-09:INFO:RUN AS null
+2023-04-27_14-21-09:INFO:Action description Execution of command /bin/sh -c 'if [ -d /oracle/app/em13c ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-09:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-10:INFO:/bin/sh -c 'if [ -d /oracle/app/em13c ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-10:INFO:output: 
+2023-04-27_14-21-10:INFO:error-stream: 
+2023-04-27_14-21-10:INFO:exit-code: 0
+2023-04-27_14-21-10:INFO:Success /oracle/app/em13c exists on mcbdbconsuat
+2023-04-27_14-21-10:INFO:Running cmd /bin/sh -c 'if [ -w /oracle/app/em13c ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-21-10:INFO:Action description Execution of command /bin/sh -c 'if [ -w /oracle/app/em13c ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-10:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-11:INFO:/bin/sh -c 'if [ -w /oracle/app/em13c ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-11:INFO:output: 
+2023-04-27_14-21-11:INFO:error-stream: 
+2023-04-27_14-21-11:INFO:exit-code: 0
+2023-04-27_14-21-11:INFO:Success :/oracle/app/em13c writable on mcbdbconsuat
+2023-04-27_14-21-11:INFO:Dir Existence and Writability Check : PASSED
+2023-04-27_14-21-11:INFO:doDirWritableCheck:remotePathPropertiesLoc:/oracle/app/oracle/middleware/oui/prov/resources Platform id:212
+2023-04-27_14-21-11:INFO:ls cmd /bin/ls
+2023-04-27_14-21-11:INFO:Command /bin/ls -A /oracle/app/em13c
+2023-04-27_14-21-11:INFO:Action description Execution of command /bin/ls -A /oracle/app/em13c  on host mcbdbconsuat
+2023-04-27_14-21-11:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-12:INFO:/bin/ls -A /oracle/app/em13c execution was successful on host mcbdbconsuat
+2023-04-27_14-21-12:INFO:output: 
+2023-04-27_14-21-12:INFO:error-stream: 
+2023-04-27_14-21-12:INFO:exit-code: 0
+2023-04-27_14-21-12:INFO:Exit Code : 0
+2023-04-27_14-21-12:INFO:Error : null
+2023-04-27_14-21-12:INFO:Out:null
+2023-04-27_14-21-12:INFO:ls command /bin/ls -A /oracle/app/em13c executed successfully 
+2023-04-27_14-21-12:INFO:/oracle/app/em13c is empty
+2023-04-27_14-21-12:INFO:Checking install base Dir is writable/oracle/app/em13c PASSED
+2023-04-27_14-21-12:INFO:RESULT 0
+2023-04-27_14-21-12:INFO:====CALLING ACTIONdoInstallBaseDirectoryWritableAndEmptyCheck
+2023-04-27_14-21-12:INFO:action:InstanceDirectoryWritableAndEmptyCheckperform:true
+2023-04-27_14-21-12:INFO: ===VALIDATION===:Checking instance Dir is writable and empty/oracle/app/em13c/agent_inst
+2023-04-27_14-21-12:INFO:Dir Writable Check/oracle/app/em13c/agent_inst
+2023-04-27_14-21-12:INFO:doDirWritableCheck:remotePathPropertiesLoc:/oracle/app/oracle/middleware/oui/prov/resources Platform id:212
+2023-04-27_14-21-12:INFO:Calling formFileTestCmd with dir:/oracle/app/em13c/agent_inst
+2023-04-27_14-21-12:INFO:Checking if dir /oracle/app/em13c/agent_inst exists on mcbdbconsuat
+2023-04-27_14-21-12:INFO:Running cmd /bin/sh -c 'if [ -d /oracle/app/em13c/agent_inst ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-21-12:INFO:RUN AS null
+2023-04-27_14-21-12:INFO:Action description Execution of command /bin/sh -c 'if [ -d /oracle/app/em13c/agent_inst ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-12:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-13:INFO:/bin/sh -c 'if [ -d /oracle/app/em13c/agent_inst ] ; then exit 0; else exit 1; fi' execution failed on host mcbdbconsuat
+2023-04-27_14-21-13:INFO: ACTION Execution of command /bin/sh -c 'if [ -d /oracle/app/em13c/agent_inst ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-13:INFO: OUT null
+2023-04-27_14-21-13:INFO: ERR null
+2023-04-27_14-21-13:INFO: EXIT CODE1
+2023-04-27_14-21-13:INFO:Error /oracle/app/em13c/agent_instdoes not exists on mcbdbconsuat
+2023-04-27_14-21-13:INFO:Trying to create dir /oracle/app/em13c/agent_inst  on mcbdbconsuat
+2023-04-27_14-21-13:INFO:Running cmd /bin/mkdir -p /oracle/app/em13c/agent_inst on node mcbdbconsuat
+2023-04-27_14-21-13:INFO:Action description Execution of command /bin/mkdir -p /oracle/app/em13c/agent_inst  on host mcbdbconsuat
+2023-04-27_14-21-13:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-14:INFO:/bin/mkdir -p /oracle/app/em13c/agent_inst execution was successful on host mcbdbconsuat
+2023-04-27_14-21-14:INFO:output: 
+2023-04-27_14-21-14:INFO:error-stream: 
+2023-04-27_14-21-14:INFO:exit-code: 0
+2023-04-27_14-21-14:INFO:Success /oracle/app/em13c/agent_inst creation on mcbdbconsuat
+2023-04-27_14-21-14:INFO:Running cmd /bin/sh -c 'if [ -w /oracle/app/em13c/agent_inst ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-21-14:INFO:Action description Execution of command /bin/sh -c 'if [ -w /oracle/app/em13c/agent_inst ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-14:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-15:INFO:/bin/sh -c 'if [ -w /oracle/app/em13c/agent_inst ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-15:INFO:output: 
+2023-04-27_14-21-15:INFO:error-stream: 
+2023-04-27_14-21-15:INFO:exit-code: 0
+2023-04-27_14-21-15:INFO:Success :/oracle/app/em13c/agent_inst writable on mcbdbconsuat
+2023-04-27_14-21-15:INFO:Removing Directory /oracle/app/em13c/agent_inst since application created it:/bin/rmdir /oracle/app/em13c/agent_inst
+2023-04-27_14-21-15:INFO:Action description Execution of command /bin/rmdir /oracle/app/em13c/agent_inst  on host mcbdbconsuat
+2023-04-27_14-21-15:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-16:INFO:/bin/rmdir /oracle/app/em13c/agent_inst execution was successful on host mcbdbconsuat
+2023-04-27_14-21-16:INFO:output: 
+2023-04-27_14-21-16:INFO:error-stream: 
+2023-04-27_14-21-16:INFO:exit-code: 0
+2023-04-27_14-21-16:INFO:Dir Existence and Writability Check : PASSED
+2023-04-27_14-21-16:INFO:doDirWritableCheck:remotePathPropertiesLoc:/oracle/app/oracle/middleware/oui/prov/resources Platform id:212
+2023-04-27_14-21-16:INFO:ls cmd /bin/ls
+2023-04-27_14-21-16:INFO:Command /bin/ls -A /oracle/app/em13c/agent_inst
+2023-04-27_14-21-16:INFO:Action description Execution of command /bin/ls -A /oracle/app/em13c/agent_inst  on host mcbdbconsuat
+2023-04-27_14-21-16:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-17:INFO:/bin/ls -A /oracle/app/em13c/agent_inst execution failed on host mcbdbconsuat
+2023-04-27_14-21-17:INFO: ACTION Execution of command /bin/ls -A /oracle/app/em13c/agent_inst  on host mcbdbconsuat
+2023-04-27_14-21-17:INFO: OUT null
+2023-04-27_14-21-17:INFO: ERR ls: 0653-341 The file /oracle/app/em13c/agent_inst does not exist.
+
+2023-04-27_14-21-17:INFO: EXIT CODE2
+2023-04-27_14-21-17:INFO:Printing Exception :CommandException: err: ls: 0653-341 The file /oracle/app/em13c/agent_inst does not exist.
+ out: null exitcode: 2
+ stacktrace: 
+null
+	at oracle.sysman.core.agentpush.ui.deployer.DeployerOps.executeCommandOnNodeInteractive(DeployerOps.java:1248)
+	at oracle.sysman.core.agentpush.ui.deployer.DeployerOps.executeCommandOnNodeInteractive(DeployerOps.java:1086)
+	at oracle.sysman.core.agentpush.ui.deployer.JschValidationOps.isDirEmpty(JschValidationOps.java:1828)
+	at oracle.sysman.core.agentpush.ui.deployer.JschValidationOps.doInstanceDirectoryWritableAndEmptyCheck(JschValidationOps.java:1468)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at oracle.sysman.core.agentpush.ui.deployer.InitializationDeployer.doSSHValidations(InitializationDeployer.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at oracle.sysman.core.agentpush.ui.deployer.BaseDeployerOps.executeActions(BaseDeployerOps.java:2156)
+	at oracle.sysman.core.agentpush.ui.deployer.InitializationDeployer.deploy(InitializationDeployer.java:400)
+	at oracle.sysman.core.agentpush.ui.deployfwk.DeploymentWorker.run(DeploymentWorker.java:26)
+	at oracle.sysman.util.threadPoolManager.WorkerThread.run(Worker.java:311)
+
+2023-04-27_14-21-17:INFO:Checking instance Dir is writable/oracle/app/em13c PASSED
+2023-04-27_14-21-17:INFO:RESULT 0
+2023-04-27_14-21-17:INFO:====CALLING ACTIONdoInstanceDirectoryWritableAndEmptyCheck
+2023-04-27_14-21-17:INFO:Skipping validation:RemoteHomeDirCheck
+2023-04-27_14-21-17:INFO:action:UmaskCheckperform:true
+2023-04-27_14-21-17:INFO:===Validation===: Checking UMask Validity on target nodes
+2023-04-27_14-21-17:INFO:NODES=mcbdbconsuat
+2023-04-27_14-21-17:INFO:Running cmd umask  on node mcbdbconsuat
+2023-04-27_14-21-17:INFO:Action description Execution of command umask   on host mcbdbconsuat
+2023-04-27_14-21-17:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-18:INFO:umask  execution was successful on host mcbdbconsuat
+2023-04-27_14-21-18:INFO:output: 0022
+
+2023-04-27_14-21-18:INFO:error-stream: 
+2023-04-27_14-21-18:INFO:exit-code: 0
+2023-04-27_14-21-18:INFO:Owner Umask:7
+2023-04-27_14-21-18:INFO:Umask is of correct format 0xx 22
+2023-04-27_14-21-18:INFO:Checking for umask on target nodes : PASSED
+2023-04-27_14-21-18:INFO:RESULT 0
+2023-04-27_14-21-18:INFO:====CALLING ACTIONdoUmaskCheck
+2023-04-27_14-21-18:INFO:action:RemoteTmpCheckperform:true
+2023-04-27_14-21-18:INFO:===Validation===: Remote TMP Existence and Writability Check
+2023-04-27_14-21-18:INFO:Temp Dir in isRemoteTmpExistsAndWritable:/tmp
+2023-04-27_14-21-18:INFO:isRemoteTmpExistsAndWritable:remotePathPropertiesLoc:/oracle/app/oracle/middleware/oui/prov/resources Platform id:212
+2023-04-27_14-21-18:INFO:Calling formFileTestCmd with tmpDir:/tmp
+2023-04-27_14-21-18:INFO:Checking if dir /tmp exists on mcbdbconsuat
+2023-04-27_14-21-18:INFO:Running cmd /bin/sh -c 'if [ -d /tmp ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-21-18:INFO:Action description Execution of command /bin/sh -c 'if [ -d /tmp ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-18:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-19:INFO:/bin/sh -c 'if [ -d /tmp ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-19:INFO:output: 
+2023-04-27_14-21-19:INFO:error-stream: 
+2023-04-27_14-21-19:INFO:exit-code: 0
+2023-04-27_14-21-19:INFO:Success /tmp exists on mcbdbconsuat
+2023-04-27_14-21-19:INFO:Running cmd /bin/sh -c 'if [ -w /tmp ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-21-19:INFO:Action description Execution of command /bin/sh -c 'if [ -w /tmp ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-19:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-20:INFO:/bin/sh -c 'if [ -w /tmp ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-20:INFO:output: 
+2023-04-27_14-21-20:INFO:error-stream: 
+2023-04-27_14-21-20:INFO:exit-code: 0
+2023-04-27_14-21-20:INFO:Success :/tmp writable on mcbdbconsuat
+2023-04-27_14-21-20:INFO:Remote TMP Existence and Writability Check : PASSED
+2023-04-27_14-21-20:INFO:RESULT 0
+2023-04-27_14-21-20:INFO:====CALLING ACTIONdoRemoteTmpCheck
+2023-04-27_14-21-20:INFO:action:OSCompatibilityCheckperform:true
+2023-04-27_14-21-20:INFO:===Validation===: Checking OS Compatibility
+2023-04-27_14-21-20:INFO:Selected platform is not LinuxX86-64
+2023-04-27_14-21-20:INFO:RESULT 0
+2023-04-27_14-21-20:INFO:====CALLING ACTIONdoOSCompatibilityCheck
+2023-04-27_14-21-20:INFO:action:CloneSourceAgentCompatibleCheckperform:true
+2023-04-27_14-21-20:INFO:Skipping doCloneSourceAgentCompatibleCheck since this is not a clone install 
+2023-04-27_14-21-20:INFO:RESULT 0
+2023-04-27_14-21-20:INFO:====CALLING ACTIONdoCloneSourceAgentCompatibleCheck
+2023-04-27_14-21-20:INFO:action:AdditionalParametersCheckperform:true
+2023-04-27_14-21-20:INFO: ===VALIDATION===:Checking if the Additional Parameters are valid
+2023-04-27_14-21-20:INFO:Additional parameters not passed so skipping validation
+2023-04-27_14-21-20:INFO:RESULT 0
+2023-04-27_14-21-20:INFO:====CALLING ACTIONdoAdditionalParametersCheck
+2023-04-27_14-21-20:INFO:action:ScpCheckperform:true
+2023-04-27_14-21-20:INFO:===Validation===: Checking if SCP has execute permissions.
+2023-04-27_14-21-20:INFO:isRemotePathsExist:remotePathPropertiesLoc:/oracle/app/oracle/middleware/oui/prov/resources Platform id:212
+2023-04-27_14-21-21:INFO:Checking if file /usr/bin/scp has execute permission on mcbdbconsuat
+2023-04-27_14-21-21:INFO:Running cmd /bin/sh -c 'if [ -x /usr/bin/scp ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-21-21:INFO:Action description Execution of command /bin/sh -c 'if [ -x /usr/bin/scp ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-21-21:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-23:INFO:/bin/sh -c 'if [ -x /usr/bin/scp ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-23:INFO:output: 
+2023-04-27_14-21-23:INFO:error-stream: 
+2023-04-27_14-21-23:INFO:exit-code: 0
+2023-04-27_14-21-23:INFO:Checking Remote Paths on target nodes : PASSED
+2023-04-27_14-21-23:INFO:RESULT 0
+2023-04-27_14-21-23:INFO:====CALLING ACTIONdoScpCheck
+2023-04-27_14-21-23:INFO:done executing the action: SSHValidations on node: mcbdbconsuat
+2023-04-27_14-21-23:INFO:action: SSHValidations is SUCCESS
+2023-04-27_14-21-23:INFO:updating status SUCCESS for action name SSHValidations with key: SSHValidations
+2023-04-27_14-21-23:INFO:==SUDO EXISTS false SUDO PRIV false
+2023-04-27_14-21-23:INFO:====CALLING ACTIONdoCopyAgentImage
+2023-04-27_14-21-23:INFO:updating status IN_PROGRESS for action name CopyAgentImage with key: CopyAgentImage
+2023-04-27_14-21-23:INFO:===Validation===: Checking OPC Host Name
+2023-04-27_14-21-23:INFO:Skipping OPC check for normal em agent deployment.
+2023-04-27_14-21-23:INFO:Action description Execution of command /bin/sh -c '/bin/mkdir -p /oracle/app/em13c'  on host mcbdbconsuat
+2023-04-27_14-21-23:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-24:INFO:/bin/sh -c '/bin/mkdir -p /oracle/app/em13c' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-24:INFO:output: 
+2023-04-27_14-21-24:INFO:error-stream: 
+2023-04-27_14-21-24:INFO:exit-code: 0
+2023-04-27_14-21-24:INFO:Action description Execution of command /bin/sh -c '/bin/mkdir -p /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM'  on host mcbdbconsuat
+2023-04-27_14-21-24:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-25:INFO:/bin/sh -c '/bin/mkdir -p /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-25:INFO:output: 
+2023-04-27_14-21-25:INFO:error-stream: 
+2023-04-27_14-21-25:INFO:exit-code: 0
+2023-04-27_14-21-25:INFO:unzip exists on oms home at /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-27_14-13-36-PM/unzipTmp/aix/unzip
+2023-04-27_14-21-25:INFO:Action description Execution of command /bin/sh -c '/bin/mkdir -p /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzipTmp'  on host mcbdbconsuat
+2023-04-27_14-21-25:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-26:INFO:/bin/sh -c '/bin/mkdir -p /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzipTmp' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-26:INFO:output: 
+2023-04-27_14-21-26:INFO:error-stream: 
+2023-04-27_14-21-26:INFO:exit-code: 0
+2023-04-27_14-21-26:INFO:Copying file /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-27_14-13-36-PM/unzipTmp/aix/unzip on the OMS to /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzipTmp on host mcbdbconsuat Attempt 1
+2023-04-27_14-21-26:INFO:Action description Execution of command /bin/sh -c '/bin/chmod 755 /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzipTmp/unzip'  on host mcbdbconsuat
+2023-04-27_14-21-26:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-27:INFO:/bin/sh -c '/bin/chmod 755 /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzipTmp/unzip' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-27:INFO:output: 
+2023-04-27_14-21-27:INFO:error-stream: 
+2023-04-27_14-21-27:INFO:exit-code: 0
+2023-04-27_14-21-27:INFO:unzip command to be used in the target hosts is /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzipTmp/unzip
+2023-04-27_14-21-27:INFO:Copying file /oracle/app/oracle/swlib/0/F4E1AFF8979FCD69E0552843877F21A1 on the OMS to /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM on host mcbdbconsuat Attempt 1
+2023-04-27_14-21-39:INFO:Action description Execution of command /bin/sh -c '/bin/chmod 755 /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/F4E1AFF8979FCD69E0552843877F21A1'  on host mcbdbconsuat
+2023-04-27_14-21-39:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-40:INFO:/bin/sh -c '/bin/chmod 755 /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/F4E1AFF8979FCD69E0552843877F21A1' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-40:INFO:output: 
+2023-04-27_14-21-40:INFO:error-stream: 
+2023-04-27_14-21-40:INFO:exit-code: 0
+2023-04-27_14-21-40:INFO:Copying /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-27_14-13-36-PM/plugins/aix/13.1.0.0.0_Plugins_212.zip into /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM
+2023-04-27_14-21-40:INFO:Copying file /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-27_14-13-36-PM/plugins/aix/13.1.0.0.0_Plugins_212.zip on the OMS to /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM on host mcbdbconsuat Attempt 1
+2023-04-27_14-21-40:INFO:Action description Execution of command /bin/sh -c '/bin/chmod 755 /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/13.1.0.0.0_Plugins_212.zip'  on host mcbdbconsuat
+2023-04-27_14-21-40:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-41:INFO:/bin/sh -c '/bin/chmod 755 /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/13.1.0.0.0_Plugins_212.zip' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-41:INFO:output: 
+2023-04-27_14-21-41:INFO:error-stream: 
+2023-04-27_14-21-41:INFO:exit-code: 0
+2023-04-27_14-21-41:INFO:Action description Execution of command /bin/sh -c '/oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzipTmp/unzip -q -o /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/13.1.0.0.0_Plugins_212.zip -d /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM'  on host mcbdbconsuat
+2023-04-27_14-21-41:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-42:INFO:/bin/sh -c '/oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzipTmp/unzip -q -o /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/13.1.0.0.0_Plugins_212.zip -d /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-42:INFO:output: 
+2023-04-27_14-21-42:INFO:error-stream: 
+2023-04-27_14-21-42:INFO:exit-code: 0
+2023-04-27_14-21-42:INFO:Action description Execution of command /bin/sh -c '/oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzipTmp/unzip -q -o /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/F4E1AFF8979FCD69E0552843877F21A1 -d /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM'  on host mcbdbconsuat
+2023-04-27_14-21-42:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-49:INFO:/bin/sh -c '/oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzipTmp/unzip -q -o /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/F4E1AFF8979FCD69E0552843877F21A1 -d /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-49:INFO:output: 
+2023-04-27_14-21-49:INFO:error-stream: 
+2023-04-27_14-21-49:INFO:exit-code: 0
+2023-04-27_14-21-49:INFO:Action description Execution of command /bin/sh -c '/oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzipTmp/unzip -q -o /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/F4E1AFF8979FCD69E0552843877F21A1 -d /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM'  on host mcbdbconsuat
+2023-04-27_14-21-49:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-56:INFO:/bin/sh -c '/oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzipTmp/unzip -q -o /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/F4E1AFF8979FCD69E0552843877F21A1 -d /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-56:INFO:output: 
+2023-04-27_14-21-56:INFO:error-stream: 
+2023-04-27_14-21-56:INFO:exit-code: 0
+2023-04-27_14-21-56:INFO: Files to do chmod are :/oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzip /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentDeploy.sh /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentcore.bin
+2023-04-27_14-21-56:INFO:Action description Execution of command /bin/sh -c '/bin/chmod 755 /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzip /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentDeploy.sh /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentcore.bin'  on host mcbdbconsuat
+2023-04-27_14-21-56:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-58:INFO:/bin/sh -c '/bin/chmod 755 /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/unzip /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentDeploy.sh /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentcore.bin' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-58:INFO:output: 
+2023-04-27_14-21-58:INFO:error-stream: 
+2023-04-27_14-21-58:INFO:exit-code: 0
+2023-04-27_14-21-58:INFO:Action description Execution of command /bin/sh -c '/bin/rm -f /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/F4E1AFF8979FCD69E0552843877F21A1'  on host mcbdbconsuat
+2023-04-27_14-21-58:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-21-59:INFO:/bin/sh -c '/bin/rm -f /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/F4E1AFF8979FCD69E0552843877F21A1' execution was successful on host mcbdbconsuat
+2023-04-27_14-21-59:INFO:output: 
+2023-04-27_14-21-59:INFO:error-stream: 
+2023-04-27_14-21-59:INFO:exit-code: 0
+2023-04-27_14-21-59:INFO:InitializationDeployer Shutting down RI
+2023-04-27_14-21-59:INFO:done executing the action: CopyAgentImage on node: mcbdbconsuat
+2023-04-27_14-21-59:INFO:action: CopyAgentImage is SUCCESS
+2023-04-27_14-21-59:INFO:updating status SUCCESS for action name CopyAgentImage with key: CopyAgentImage
+2023-04-27_14-21-59:INFO:TIME TAKEN for Initialization on host mcbdbconsuat is 0: hrs 1: mins 6 sec
+2023-04-27_14-21-59:INFO:PERF:HOSTNAME:mcbdbconsuat:InitializationDeployer_EXECUTION_TIME:66628
+2023-04-27_14-21-59:INFO:HOST:mcbdbconsuat
+2023-04-27_14-21-59:INFO:Destroying Logger
+2023-04-27_14-21-59:INFO:======================================Initialization END ====================================
+2023-04-27_14-21-59:INFO:Clearing EMSecurityContext EMExecutionContext in BaseDeployerOps
+2023-04-27_14-22-00:INFO:======================================Remote Prereq Checker START ====================================
+2023-04-27_14-22-00:INFO:Creating instance of ClusterBase Ops for hostnamemcbdbconsuat
+2023-04-27_14-22-01:INFO:Retry Count 5 sleep interval 250
+2023-04-27_14-22-01:INFO:Setting security contextSYSMAN
+2023-04-27_14-22-01:INFO:Setting locale succeeded in BaseDeployerOps
+2023-04-27_14-22-01:INFO:[action name=RemotePrereq, action Description=Remote Prerequisite Checks, order=100, skip=false, executeAlways=false, status=null, 
+
+2023-04-27_14-22-01:INFO: ACTIONS : RemotePrereq
+2023-04-27_14-22-01:INFO:============Creating Deployment Vo for key : RemotePrerequisteCheck and setting status as NOT_EXECUTED
+2023-04-27_14-22-01:INFO:=====Creating Action Vo for actionRemotePrereq
+2023-04-27_14-22-01:INFO:deploymentVo has now status: NOT_EXECUTED
+2023-04-27_14-22-01:INFO:Entered generateDeploymentContextXml
+2023-04-27_14-22-01:INFO:prereqXmlHostDir /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-27_14-13-36-PM/prereqxmls/mcbdbconsuat
+2023-04-27_14-22-01:INFO:Creating hostname directory in prereqxml for hostnamemcbdbconsuat
+2023-04-27_14-22-01:INFO:Directory name : /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-27_14-13-36-PM/prereqxmls/mcbdbconsuat
+2023-04-27_14-22-01:INFO:context_xml_file = /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-27_14-13-36-PM/prereqxmls/mcbdbconsuat/agent_prereq_context.xml
+2023-04-27_14-22-01:INFO:generating context xml file: /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-27_14-13-36-PM/prereqxmls/mcbdbconsuat/agent_prereq_context.xml
+2023-04-27_14-22-01:INFO:==SUDO EXISTS false SUDO PRIV false
+2023-04-27_14-22-01:INFO:====CALLING ACTIONdoRemotePrereq
+2023-04-27_14-22-01:INFO:updating status IN_PROGRESS for action name RemotePrereq with key: RemotePrereq
+2023-04-27_14-22-01:INFO:Action description Execution of command /bin/sh -c '/bin/mkdir -p /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/prereq_stage'  on host mcbdbconsuat
+2023-04-27_14-22-01:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-22-02:INFO:/bin/sh -c '/bin/mkdir -p /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/prereq_stage' execution was successful on host mcbdbconsuat
+2023-04-27_14-22-02:INFO:output: 
+2023-04-27_14-22-02:INFO:error-stream: 
+2023-04-27_14-22-02:INFO:exit-code: 0
+2023-04-27_14-22-02:INFO:Action description Execution of command /bin/sh -c '/bin/mkdir -p /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/prereqlogs'  on host mcbdbconsuat
+2023-04-27_14-22-02:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-22-03:INFO:/bin/sh -c '/bin/mkdir -p /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/prereqlogs' execution was successful on host mcbdbconsuat
+2023-04-27_14-22-03:INFO:output: 
+2023-04-27_14-22-03:INFO:error-stream: 
+2023-04-27_14-22-03:INFO:exit-code: 0
+2023-04-27_14-22-03:INFO:Action description Execution of command /bin/sh -c '/bin/chmod 755 /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentcore.bin'  on host mcbdbconsuat
+2023-04-27_14-22-03:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-22-04:INFO:/bin/sh -c '/bin/chmod 755 /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentcore.bin' execution was successful on host mcbdbconsuat
+2023-04-27_14-22-04:INFO:output: 
+2023-04-27_14-22-04:INFO:error-stream: 
+2023-04-27_14-22-04:INFO:exit-code: 0
+2023-04-27_14-22-04:INFO:STAGE LOC :/oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM
+2023-04-27_14-22-04:INFO:Action description Execution of command /bin/sh -c '/bin/chmod 755 /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentcore.bin'  on host mcbdbconsuat
+2023-04-27_14-22-04:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-22-05:INFO:/bin/sh -c '/bin/chmod 755 /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentcore.bin' execution was successful on host mcbdbconsuat
+2023-04-27_14-22-05:INFO:output: 
+2023-04-27_14-22-05:INFO:error-stream: 
+2023-04-27_14-22-05:INFO:exit-code: 0
+2023-04-27_14-22-05:INFO:destination location:/oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM
+2023-04-27_14-22-05:INFO:sourceFileLocation:/oracle/app/oracle/middleware/install/oneoffs/13.1.0.0.0/aix/prereqs.zip
+2023-04-27_14-22-05:INFO:one off source /oracle/app/oracle/middleware/install/oneoffs/13.1.0.0.0/aix/prereqs.zip does not exist
+2023-04-27_14-22-05:INFO:one off source /oracle/app/oracle/middleware/install/oneoffs/13.1.0.0.0/aix/prereqs.zip does not exist
+2023-04-27_14-22-05:INFO:prereq config location:/oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/prereqs
+2023-04-27_14-22-05:INFO: return prereq_config_location:null
+2023-04-27_14-22-05:INFO:prereq_config is :null
+2023-04-27_14-22-05:INFO:Skipping ip address check on hostnames
+2023-04-27_14-22-05:INFO:Passing AGENT BASE DIRECTORY /oracle/app/em13c
+2023-04-27_14-22-05:INFO:Action description Execution of command /bin/sh -c 'ABD=/oracle/app/em13c;$ABD/ADATMP_2023-04-27_14-13-36-PM/agentcore.bin -prereqChecker -silent -ignoreSysPrereqs -rscratchPath $ABD/ADATMP_2023-04-27_14-13-36-PM/prereqlogs -entryPoint oracle.sysman.top.agent_Complete -nowait -noconsole -J-DORACLE_HOSTNAME=mcbdbconsuat -J-DAGENT_PORT=3872 -J-DALLOW_IPADDRESS=true -J-DAGENT_BASE_DIR=$ABD -J-DSTAGE_LOCATION=$ABD/ADATMP_2023-04-27_14-13-36-PM/prereq_stage -J-DUSER_NAME=oracle -J-DRUN_AS=null -J-DORACLE_HOME=$ABD/agent_13.1.0.0.0'  on host mcbdbconsuat
+2023-04-27_14-22-05:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-24-48:INFO:/bin/sh -c 'ABD=/oracle/app/em13c;$ABD/ADATMP_2023-04-27_14-13-36-PM/agentcore.bin -prereqChecker -silent -ignoreSysPrereqs -rscratchPath $ABD/ADATMP_2023-04-27_14-13-36-PM/prereqlogs -entryPoint oracle.sysman.top.agent_Complete -nowait -noconsole -J-DORACLE_HOSTNAME=mcbdbconsuat -J-DAGENT_PORT=3872 -J-DALLOW_IPADDRESS=true -J-DAGENT_BASE_DIR=$ABD -J-DSTAGE_LOCATION=$ABD/ADATMP_2023-04-27_14-13-36-PM/prereq_stage -J-DUSER_NAME=oracle -J-DRUN_AS=null -J-DORACLE_HOME=$ABD/agent_13.1.0.0.0' execution was successful on host mcbdbconsuat
+2023-04-27_14-24-48:INFO:exit-code: 0
+2023-04-27_14-24-48:INFO:Action description Execution of command /bin/sh -c '(cd /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/prereqlogs && /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/zip -q -r /tmp/remoteArchivesmcbdbconsuat2023-04-27_02-24-48-PM.zip * -x oui/**\* OPatch/**\* oracle_common/**\*)'  on host mcbdbconsuat
+2023-04-27_14-24-48:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-24-49:INFO:/bin/sh -c '(cd /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/prereqlogs && /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/zip -q -r /tmp/remoteArchivesmcbdbconsuat2023-04-27_02-24-48-PM.zip * -x oui/**\* OPatch/**\* oracle_common/**\*)' execution was successful on host mcbdbconsuat
+2023-04-27_14-24-49:INFO:output: 
+2023-04-27_14-24-49:INFO:error-stream: 
+2023-04-27_14-24-49:INFO:exit-code: 0
+2023-04-27_14-24-49:INFO:Action description Copying file /tmp/remoteArchivesmcbdbconsuat2023-04-27_02-24-48-PM.zip from host mcbdbconsuat to /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-27_14-13-36-PM/localArchivesmcbdbconsuat2023-04-27_02-24-48-PM.zip on the OMS Attempt 1
+2023-04-27_14-24-49:INFO:ACTION :Execution of command /oracle/app/oracle/middleware/bin/unzip -q -o -d /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-27_14-13-36-PM/prereqlogs/productprereq_logs/mcbdbconsuat /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-27_14-13-36-PM/localArchivesmcbdbconsuat2023-04-27_02-24-48-PM.zip on the OMS host
+2023-04-27_14-24-49:INFO:Nodelocalhost
+2023-04-27_14-24-49:INFO:OUT:
+2023-04-27_14-24-49:INFO:ERR:null
+2023-04-27_14-24-49:INFO:exit:0
+2023-04-27_14-24-49:INFO:STATUS:0
+2023-04-27_14-24-49:INFO:Action description Execution of command /bin/sh -c '/bin/rm -f /tmp/remoteArchivesmcbdbconsuat2023-04-27_02-24-48-PM.zip'  on host mcbdbconsuat
+2023-04-27_14-24-49:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-24-51:INFO:/bin/sh -c '/bin/rm -f /tmp/remoteArchivesmcbdbconsuat2023-04-27_02-24-48-PM.zip' execution was successful on host mcbdbconsuat
+2023-04-27_14-24-51:INFO:output: 
+2023-04-27_14-24-51:INFO:error-stream: 
+2023-04-27_14-24-51:INFO:exit-code: 0
+2023-04-27_14-24-51:INFO:done executing the action: RemotePrereq on node: mcbdbconsuat
+2023-04-27_14-24-51:INFO:action: RemotePrereq is SUCCESS
+2023-04-27_14-24-51:INFO:updating status SUCCESS for action name RemotePrereq with key: RemotePrereq
+2023-04-27_14-24-51:INFO:File Name :/etc/oraInst.loc
+2023-04-27_14-24-51:INFO:Running cmd /bin/sh -c 'if [ -f /etc/oraInst.loc ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-24-51:INFO:Action description Execution of command /bin/sh -c 'if [ -f /etc/oraInst.loc ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-24-51:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-24-52:INFO:/bin/sh -c 'if [ -f /etc/oraInst.loc ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-24-52:INFO:output: 
+2023-04-27_14-24-52:INFO:error-stream: 
+2023-04-27_14-24-52:INFO:exit-code: 0
+2023-04-27_14-24-52:INFO: Inventory Pointer /etc/oraInst.loc exist
+2023-04-27_14-24-52:INFO:Return oraInstRoot.sh :
+2023-04-27_14-24-52:INFO:resultfile = /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-27_14-13-36-PM/prereqlogs/productprereq_logs/mcbdbconsuat/results/em_prereqs_results.xml
+2023-04-27_14-24-52:INFO:DESCRIPTION:This is a prerequisite condition to test whether the     Oracle software is certified on the current O/S or not. RESULT: PASSED RESULT TEXT: Expected result: One of 7100,6100
+Actual Result: 7100
+Check complete. The overall result of this check is: Passed
+2023-04-27_14-24-52:INFO:DESCRIPTION:This is a prerequisite condition to test whether the     the minimum required patches are available on the system. RESULT: PASSED RESULT TEXT: Checking for bos.adt.base(0.0); found bos.adt.base(7.1.3.30).	Passed
+Checking for bos.adt.lib(0.0); found bos.adt.lib(7.1.2.15).	Passed
+Checking for bos.adt.libm(0.0); found bos.adt.libm(7.1.3.0).	Passed
+Checking for bos.perf.libperfstat(0.0); found bos.perf.libperfstat(7.1.3.30).	Passed
+Checking for bos.perf.perfstat(0.0); found bos.perf.perfstat(7.1.3.30).	Passed
+Checking for bos.perf.proctools(0.0); found bos.perf.proctools(7.1.3.30).	Passed
+Checking for rsct.basic.rte(0.0); found rsct.basic.rte(3.2.0.0).	Passed
+Checking for rsct.compat.clients.rte(0.0); found rsct.compat.clients.rte(3.2.0.0).	Passed
+Checking for xlC.aix61.rte(10.1.0.0); found xlC.aix61.rte(12.1.0.1).	Passed
+Checking for xlC.rte(10.1.0.0); found xlC.rte(12.1.0.1).	Passed
+Check complete. The overall result of this check is: Passed
+2023-04-27_14-24-52:INFO:DESCRIPTION:This is a prerequisite condition to test whether the software is compatible for this o/s. RESULT: PASSED RESULT TEXT: Check complete. The overall result of this check is: Passed
+2023-04-27_14-24-52:INFO:DESCRIPTION:Checks whether the Inventory Location has at least 100 MB of free disk space. RESULT: PASSED RESULT TEXT: Expected result: 100.0MB
+Actual Result: 1317MB
+Check complete. The overall result of this check is: Passed
+2023-04-27_14-24-52:INFO:DESCRIPTION:Checks whether you have permission to write to the central inventory on the system. RESULT: PASSED RESULT TEXT: Check complete. The overall result of this check is: Passed
+2023-04-27_14-24-52:INFO:DESCRIPTION:Checking whether the timezone installed in the machine is supported for the agent startup RESULT: PASSED RESULT TEXT: Check complete. The overall result of this check is: Passed
+2023-04-27_14-24-52:INFO:DESCRIPTION:Checking whether the agent base directory is owned by the install user and all the parent directories of the agent base directory is either owned by install user or root user and the root directory is owned by root user. RESULT: PASSED RESULT TEXT: Check complete. The overall result of this check is: Passed
+2023-04-27_14-24-52:INFO:DESCRIPTION:Checking for port availability and hostname validity. RESULT: PASSED RESULT TEXT: Expected result: Port 3872 must be available on all IP addresses associated with host mcbdbconsuat.
+Actual Result: 3872
+Check complete. The overall result of this check is: Passed
+2023-04-27_14-24-52:INFO:DESCRIPTION:Checking whether the old oracle home entry is present in the central inventory. RESULT: PASSED RESULT TEXT: Check complete. The overall result of this check is: Passed
+2023-04-27_14-24-52:INFO:DESCRIPTION:This is a prerequisite condition to test whether the host name where the installation will be done, is correct or not. RESULT: PASSED RESULT TEXT: Expected result: Fully qualified domain name, for example foo.mydomain.com
+Actual Result: mcbdbconsuat. Ensure that you provide a fully qualified domain name.
+Check complete. The overall result of this check is: Passed
+2023-04-27_14-24-52:INFO:File does not exist
+2023-04-27_14-24-52:INFO:isRemotePathsExist:remotePathPropertiesLoc:/oracle/app/oracle/middleware/oui/prov/resources Platform id:212
+2023-04-27_14-24-52:INFO:File Name :/usr/bin/sudo
+2023-04-27_14-24-52:INFO:Running cmd /bin/sh -c 'if [ -f /usr/bin/sudo ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-24-52:INFO:Action description Execution of command /bin/sh -c 'if [ -f /usr/bin/sudo ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-24-52:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-24-53:INFO:/bin/sh -c 'if [ -f /usr/bin/sudo ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-24-53:INFO:output: 
+2023-04-27_14-24-53:INFO:error-stream: 
+2023-04-27_14-24-53:INFO:exit-code: 0
+2023-04-27_14-24-53:INFO:sudo binary /usr/bin/sudo exists on target nodemcbdbconsuat
+2023-04-27_14-24-53:INFO:sudo binary exists or root creds provided
+2023-04-27_14-24-53:INFO:running root scripts as user :oracle
+2023-04-27_14-24-53:INFO:Using root utl given by user /usr/bin/sudo -u %RUNAS% %COMMAND%
+2023-04-27_14-24-53:INFO:Action description Execution of command /usr/bin/sudo -K  on host mcbdbconsuat
+2023-04-27_14-24-53:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-24-54:INFO:/usr/bin/sudo -K execution was successful on host mcbdbconsuat
+2023-04-27_14-24-54:INFO:output: 
+2023-04-27_14-24-54:INFO:error-stream: 
+2023-04-27_14-24-54:INFO:exit-code: 0
+2023-04-27_14-24-54:INFO:not adding /bin/sh -c  to the root command
+2023-04-27_14-24-54:INFO:pdp command without shell out/usr/bin/sudo -u root  id
+2023-04-27_14-24-54:INFO:Setting pty flag to true
+2023-04-27_14-24-54:INFO:Action description Execution of command /usr/bin/sudo -u root  id  on host mcbdbconsuat
+2023-04-27_14-24-54:INFO:Attempt :1 pty required true  with inputs
+2023-04-27_14-24-56:INFO:/usr/bin/sudo -u root  id execution was successful on host mcbdbconsuat
+2023-04-27_14-24-56:INFO:output: uid=0(root) gid=0(system) groups=2(bin),3(sys),7(security),8(cron),10(audit),11(lp)
+
+2023-04-27_14-24-56:INFO:error-stream: 
+2023-04-27_14-24-56:INFO:exit-code: 0
+2023-04-27_14-24-56:INFO:Action description Execution of command /usr/bin/sudo -K  on host mcbdbconsuat
+2023-04-27_14-24-56:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-24-57:INFO:/usr/bin/sudo -K execution was successful on host mcbdbconsuat
+2023-04-27_14-24-57:INFO:output: 
+2023-04-27_14-24-57:INFO:error-stream: 
+2023-04-27_14-24-57:INFO:exit-code: 0
+2023-04-27_14-24-57:INFO:output of id uid=0(root) gid=0(system) groups=2(bin),3(sys),7(security),8(cron),10(audit),11(lp)
+
+2023-04-27_14-24-57:INFO:User oracle has sudo privileges on host mcbdbconsuat
+2023-04-27_14-24-57:INFO:==USER has sudo privileges===
+2023-04-27_14-24-57:INFO:PASSED:Is the software certified on the current operating system? = PASSED
+2023-04-27_14-24-57:INFO:PASSED:Are the required packages installed on the current operating system? = PASSED
+2023-04-27_14-24-57:INFO:PASSED:Is the software compatible with the current operating system? = PASSED
+2023-04-27_14-24-57:INFO:PASSED:Checking for sufficient disk space in the Inventory Location = PASSED
+2023-04-27_14-24-57:INFO:PASSED:Checking for write permissions on the inventory. = PASSED
+2023-04-27_14-24-57:INFO:PASSED:Checking TimeZone settings... = PASSED
+2023-04-27_14-24-57:INFO:PASSED:Checking Agent Base Directory Ownership... = PASSED
+2023-04-27_14-24-57:INFO:PASSED:Checking for port availability and hostname validity... = PASSED
+2023-04-27_14-24-57:INFO:PASSED:Checking old Oracle Home existence in the inventory... = PASSED
+2023-04-27_14-24-57:INFO:PASSED:Is the host name valid? = PASSED
+2023-04-27_14-24-57:INFO:PASSED:Does the Privilege Delegation tool exist on the remote host? = PASSED
+2023-04-27_14-24-57:INFO:PASSED:Do you have the privileges to run as root using the Privilege Delegation tool? = PASSED
+2023-04-27_14-24-57:INFO:TIME TAKEN for RemotePrerequisites on host mcbdbconsuat is 0: hrs 2: mins 56 sec
+2023-04-27_14-24-57:INFO:PERF:HOSTNAME:mcbdbconsuat:RemotePrereqChecker_EXECUTION_TIME:176840
+2023-04-27_14-24-57:INFO:HOST:mcbdbconsuat
+2023-04-27_14-24-57:INFO:Destroying Logger
+2023-04-27_14-24-57:INFO:======================================Remote Prereq Checker END ====================================
+2023-04-27_14-24-57:INFO:Clearing EMSecurityContext EMExecutionContext in BaseDeployerOps
+2023-04-27_14-24-58:INFO:======================================New Agent Deployer START ====================================
+2023-04-27_14-24-58:INFO:Creating instance of ClusterBase Ops for hostnamemcbdbconsuat
+2023-04-27_14-24-59:INFO:Retry Count 5 sleep interval 250
+2023-04-27_14-24-59:INFO:Setting security contextSYSMAN
+2023-04-27_14-24-59:INFO:Setting locale succeeded in BaseDeployerOps
+2023-04-27_14-24-59:INFO:[action name=PreInstallScript, action Description=Preinstallation Script, order=100, skip=false, executeAlways=false, status=null, 
+
+2023-04-27_14-24-59:INFO:skipping preinstall script since user has not specified one
+2023-04-27_14-24-59:INFO: Skipping action PreInstallScript based on inputs
+2023-04-27_14-24-59:INFO:[action name=Install, action Description=Installation and Configuration, order=200, skip=false, executeAlways=false, status=null, 
+
+2023-04-27_14-24-59:INFO:[action name=SecureAgent, action Description=Secure Agent, order=300, skip=false, executeAlways=false, status=null, 
+
+2023-04-27_14-24-59:INFO:[action name=RunRootSH, action Description=Root.sh, order=400, skip=false, executeAlways=false, status=null, 
+
+2023-04-27_14-24-59:INFO:[action name=PostInstallScript, action Description=Postinstallation Script, order=500, skip=false, executeAlways=false, status=null, 
+
+2023-04-27_14-24-59:INFO:skipping postinstall script since user has not specified one
+2023-04-27_14-24-59:INFO: Skipping action PostInstallScript based on inputs
+2023-04-27_14-24-59:INFO:[action name=CollectLog, action Description=Collect Log, order=600, skip=false, executeAlways=true, status=null, 
+
+2023-04-27_14-24-59:INFO:[action name=Cleanup, action Description=Clean up, order=700, skip=false, executeAlways=false, status=null, 
+
+2023-04-27_14-24-59:INFO: ACTIONS : Install
+2023-04-27_14-24-59:INFO: ACTIONS : SecureAgent
+2023-04-27_14-24-59:INFO: ACTIONS : RunRootSH
+2023-04-27_14-24-59:INFO: ACTIONS : CollectLog
+2023-04-27_14-24-59:INFO: ACTIONS : Cleanup
+2023-04-27_14-24-59:INFO:============Creating Deployment Vo for key : Installation and setting status as NOT_EXECUTED
+2023-04-27_14-24-59:INFO:=====Creating Action Vo for actionInstall
+2023-04-27_14-24-59:INFO:=====Creating Action Vo for actionSecureAgent
+2023-04-27_14-24-59:INFO:=====Creating Action Vo for actionRunRootSH
+2023-04-27_14-24-59:INFO:=====Creating Action Vo for actionCollectLog
+2023-04-27_14-24-59:INFO:=====Creating Action Vo for actionCleanup
+2023-04-27_14-24-59:INFO:deploymentVo has now status: NOT_EXECUTED
+2023-04-27_14-24-59:INFO:sudo exists value true
+2023-04-27_14-24-59:INFO:sudo privilege value true
+2023-04-27_14-24-59:INFO:==SUDO EXISTS true SUDO PRIV true
+2023-04-27_14-24-59:INFO:====CALLING ACTIONdoInstall
+2023-04-27_14-24-59:INFO:updating status IN_PROGRESS for action name Install with key: Install
+2023-04-27_14-24-59:INFO:Port provided
+2023-04-27_14-24-59:INFO:Install Args -ignorePrereqs
+2023-04-27_14-24-59:INFO:Install Args ORACLE_HOSTNAME=mcbdbconsuat
+2023-04-27_14-24-59:INFO:Install Args AGENT_BASE_DIR=/oracle/app/em13c
+2023-04-27_14-24-59:INFO:Install Args OMS_HOST=bmioem
+2023-04-27_14-24-59:INFO:Install Args EM_UPLOAD_PORT=4903
+2023-04-27_14-24-59:INFO:Install Args AGENT_INSTANCE_HOME=/oracle/app/em13c/agent_inst
+2023-04-27_14-24-59:INFO:Install Args b_doDiscovery=false
+2023-04-27_14-24-59:INFO:Install Args START_AGENT=false
+2023-04-27_14-24-59:INFO:Install Args b_forceInstCheck=true
+2023-04-27_14-24-59:INFO:Install Args -force
+2023-04-27_14-24-59:INFO:Install Args AGENT_PORT=3872
+2023-04-27_14-24-59:INFO:Action description Execution of command /bin/sh -c '/oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentDeploy.sh -ignorePrereqs ORACLE_HOSTNAME=mcbdbconsuat AGENT_BASE_DIR=/oracle/app/em13c OMS_HOST=bmioem EM_UPLOAD_PORT=4903 AGENT_INSTANCE_HOME=/oracle/app/em13c/agent_inst b_doDiscovery=false START_AGENT=false b_forceInstCheck=true -force AGENT_PORT=3872'  on host mcbdbconsuat
+2023-04-27_14-24-59:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-27-58:INFO:/bin/sh -c '/oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentDeploy.sh -ignorePrereqs ORACLE_HOSTNAME=mcbdbconsuat AGENT_BASE_DIR=/oracle/app/em13c OMS_HOST=bmioem EM_UPLOAD_PORT=4903 AGENT_INSTANCE_HOME=/oracle/app/em13c/agent_inst b_doDiscovery=false START_AGENT=false b_forceInstCheck=true -force AGENT_PORT=3872' execution failed on host mcbdbconsuat
+2023-04-27_14-27-58:INFO:Pattern ERROR: found in file /oracle/app/oracle/gc_inst/em/EMGC_OMS1/sysman/agentpush/2023-04-27_14-13-36-PM/logs/mcbdbconsuat/install.log Line ERROR: The Oracle Management Server (OMS) host and port specified via OMS_HOST and EM_UPLOAD_PORT is not available.  Pass in a valid hostname and port number for the OMS to successfully deploy the agent. 
+2023-04-27_14-27-58:INFO:Error Message found  The Oracle Management Server (OMS) host and port specified via OMS_HOST and EM_UPLOAD_PORT is not available.  Pass in a valid hostname and port number for the OMS to successfully deploy the agent. 
+2023-04-27_14-27-58:INFO: ACTION Execution of command /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentDeploy.sh -ignorePrereqs ORACLE_HOSTNAME=mcbdbconsuat AGENT_BASE_DIR=/oracle/app/em13c OMS_HOST=bmioem EM_UPLOAD_PORT=4903 AGENT_INSTANCE_HOME=/oracle/app/em13c/agent_inst b_doDiscovery=false START_AGENT=false b_forceInstCheck=true -force AGENT_PORT=3872 on host mcbdbconsuat
+2023-04-27_14-27-58:INFO: OUT null
+2023-04-27_14-27-58:INFO: ERR  The Oracle Management Server (OMS) host and port specified via OMS_HOST and EM_UPLOAD_PORT is not available.  Pass in a valid hostname and port number for the OMS to successfully deploy the agent. 
+2023-04-27_14-27-58:INFO: EXIT CODE1
+2023-04-27_14-27-58:INFO:InvocationTargetException Exception
+2023-04-27_14-27-58:INFO:Printing Exception :java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at oracle.sysman.core.agentpush.ui.deployer.BaseDeployerOps.executeActions(BaseDeployerOps.java:2156)
+	at oracle.sysman.core.agentpush.ui.deployer.NewAgentDeployer.deploy(NewAgentDeployer.java:48)
+	at oracle.sysman.core.agentpush.ui.deployfwk.DeploymentWorker.run(DeploymentWorker.java:26)
+	at oracle.sysman.util.threadPoolManager.WorkerThread.run(Worker.java:311)
+Caused by: CommandException: err:  The Oracle Management Server (OMS) host and port specified via OMS_HOST and EM_UPLOAD_PORT is not available.  Pass in a valid hostname and port number for the OMS to successfully deploy the agent.  out: null exitcode: 1
+ stacktrace: 
+null
+	at oracle.sysman.core.agentpush.ui.deployer.DeployerOps.executeCommandOnNodeInteractive(DeployerOps.java:1248)
+	at oracle.sysman.core.agentpush.ui.deployer.DeployerOps.executeCommandOnNodeInteractive(DeployerOps.java:1092)
+	at oracle.sysman.core.agentpush.ui.deployer.DeployerOps.executeCmdOnNode(DeployerOps.java:681)
+	at oracle.sysman.core.agentpush.ui.deployer.DeployerOps.executeCmdOnNode(DeployerOps.java:630)
+	at oracle.sysman.core.agentpush.ui.deployer.BaseDeployerOps.doInstall(BaseDeployerOps.java:675)
+	... 8 more
+
+2023-04-27_14-27-58:INFO:=========Command Exception :Error Message: The Oracle Management Server (OMS) host and port specified via OMS_HOST and EM_UPLOAD_PORT is not available.  Pass in a valid hostname and port number for the OMS to successfully deploy the agent. <br><br> Exit Code :1
+2023-04-27_14-27-58:INFO:Updating Action Installwith Status FAILED and error Message :Error Message: The Oracle Management Server (OMS) host and port specified via OMS_HOST and EM_UPLOAD_PORT is not available.  Pass in a valid hostname and port number for the OMS to successfully deploy the agent. <br><br> Exit Code :1 and problem Execution of command /oracle/app/em13c/ADATMP_2023-04-27_14-13-36-PM/agentDeploy.sh -ignorePrereqs ORACLE_HOSTNAME=mcbdbconsuat AGENT_BASE_DIR=/oracle/app/em13c OMS_HOST=bmioem EM_UPLOAD_PORT=4903 AGENT_INSTANCE_HOME=/oracle/app/em13c/agent_inst b_doDiscovery=false START_AGENT=false b_forceInstCheck=true -force AGENT_PORT=3872 on host mcbdbconsuat Failed and recommendation Fix the cause of the error and retry the operation
+2023-04-27_14-27-58:INFO:=================action status is not empty FAILED
+2023-04-27_14-27-58:INFO:Breaking since the action has failed
+2023-04-27_14-27-58:INFO:Skipping action SecureAgent since some previous step has failed
+2023-04-27_14-27-58:INFO:Skipping action RunRootSH since some previous step has failed
+2023-04-27_14-27-58:INFO:Not Skipping action CollectLog since some previous step has failed
+2023-04-27_14-27-58:INFO:sudo exists value true
+2023-04-27_14-27-58:INFO:sudo privilege value true
+2023-04-27_14-27-58:INFO:==SUDO EXISTS true SUDO PRIV true
+2023-04-27_14-27-58:INFO:====CALLING ACTIONdoCollectLog
+2023-04-27_14-27-58:INFO:updating status IN_PROGRESS for action name CollectLog with key: CollectLog
+2023-04-27_14-27-58:INFO:Action Installation and Configuration failed so copy cfgToolLogs directory
+2023-04-27_14-27-58:INFO:Perform Copy CfgToolLogs :true
+2023-04-27_14-27-58:INFO:Dir Name/oracle/app/em13c/agent_13.1.0.0.0/cfgtoollogs
+2023-04-27_14-27-58:INFO:Running cmd /bin/sh -c 'if [ -d /oracle/app/em13c/agent_13.1.0.0.0/cfgtoollogs ] ; then exit 0; else exit 1; fi' on node mcbdbconsuat
+2023-04-27_14-27-58:INFO:Action description Execution of command /bin/sh -c 'if [ -d /oracle/app/em13c/agent_13.1.0.0.0/cfgtoollogs ] ; then exit 0; else exit 1; fi'  on host mcbdbconsuat
+2023-04-27_14-27-58:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-27-59:INFO:/bin/sh -c 'if [ -d /oracle/app/em13c/agent_13.1.0.0.0/cfgtoollogs ] ; then exit 0; else exit 1; fi' execution was successful on host mcbdbconsuat
+2023-04-27_14-27-59:INFO:output: 
+2023-04-27_14-27-59:INFO:error-stream: 
+2023-04-27_14-27-59:INFO:exit-code: 0
+2023-04-27_14-27-59:INFO:Dir /oracle/app/em13c/agent_13.1.0.0.0/cfgtoollogs exists on remote node and hence copying it
+2023-04-27_14-27-59:INFO:Action description Execution of command /bin/sh -c '(cd /oracle/app/em13c/agent_13.1.0.0.0/cfgtoollogs && /oracle/app/em13c/agent_13.1.0.0.0/bin/zip -q -r /tmp/remoteArchivesmcbdbconsuat2023-04-27_02-27-59-PM.zip * -x oui/**\* OPatch/**\* oracle_common/**\*)'  on host mcbdbconsuat
+2023-04-27_14-27-59:INFO:Attempt :1 pty required false  with no inputs
+2023-04-27_14-28-00:INFO:/bin/sh -c '(cd /oracle/app/em13c/agent_13.1.0.0.0/cfgtoollogs && /oracle/app/em13c/agent_13.1.0.0.0/bin/zip -q -r /tmp/remoteArchivesmcbdbconsuat2023-04-27_02-27-59-PM.zip * -x oui/**\* OPatch/**\* oracle_common/**\*)' execution failed on host mcbdbconsuat
+2023-04-27_14-28-00:INFO: OUT null
+2023-04-27_14-28-00:INFO: ERR /bin/sh: /oracle/app/em13c/agent_13.1.0.0.0/bin/zip:  not found.
+
+2023-04-27_14-28-00:INFO: EXIT CODE127
+2023-04-27_14-28-00:INFO: ACTION Execution of command (cd /oracle/app/em13c/agent_13.1.0.0.0/cfgtoollogs && /oracle/app/em13c/agent_13.1.0.0.0/bin/zip -q -r /tmp/remoteArchivesmcbdbconsuat2023-04-27_02-27-59-PM.zip * -x oui/**\* OPatch/**\* oracle_common/**\*)  on host mcbdbconsuat
+2023-04-27_14-28-00:INFO:InvocationTargetException Exception
+2023-04-27_14-28-00:INFO:Printing Exception :java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at oracle.sysman.core.agentpush.ui.deployer.BaseDeployerOps.executeActions(BaseDeployerOps.java:2156)
+	at oracle.sysman.core.agentpush.ui.deployer.NewAgentDeployer.deploy(NewAgentDeployer.java:48)
+	at oracle.sysman.core.agentpush.ui.deployfwk.DeploymentWorker.run(DeploymentWorker.java:26)
+	at oracle.sysman.util.threadPoolManager.WorkerThread.run(Worker.java:311)
+Caused by: CommandException: err: /bin/sh: /oracle/app/em13c/agent_13.1.0.0.0/bin/zip:  not found.
+ out: null exitcode: 127
+ stacktrace: 
+null
+	at oracle.sysman.core.agentpush.ui.deployer.DeployerOps.executeCommandOnNodeInteractive(DeployerOps.java:1248)
+	at oracle.sysman.core.agentpush.ui.deployer.DeployerOps.executeCommandOnNodeInteractive(DeployerOps.java:1086)
+	at oracle.sysman.core.agentpush.ui.deployer.DeployerOps.executeCmdOnNode(DeployerOps.java:683)
+	at oracle.sysman.core.agentpush.ui.deployer.DeployerOps.executeCmdOnNode(DeployerOps.java:625)
+	at oracle.sysman.core.agentpush.ui.deployer.DeployerOps.copyDirFromNode(DeployerOps.java:502)
+	at oracle.sysman.core.agentpush.ui.deployer.BaseDeployerOps.doCollectLog(BaseDeployerOps.java:1266)
+	... 8 more
+
+2023-04-27_14-28-00:INFO:=========Command Exception :Error Message:/bin/sh: /*****/app/em13c/agent_13.1.0.0.0/bin/zip:  not found.
+<br><br> Exit Code :127
+2023-04-27_14-28-00:INFO:Updating Action CollectLogwith Status FAILED and error Message :Error Message:/bin/sh: /*****/app/em13c/agent_13.1.0.0.0/bin/zip:  not found.
+<br><br> Exit Code :127 and problem Execution of command (cd /oracle/app/em13c/agent_13.1.0.0.0/cfgtoollogs && /oracle/app/em13c/agent_13.1.0.0.0/bin/zip -q -r /tmp/remoteArchivesmcbdbconsuat2023-04-27_02-27-59-PM.zip * -x oui/**\* OPatch/**\* oracle_common/**\*)  on host mcbdbconsuat Failed and recommendation Not Available
+2023-04-27_14-28-00:INFO:=================action status is not empty FAILED
+2023-04-27_14-28-00:INFO:Breaking since the action has failed
+2023-04-27_14-28-00:INFO:Skipping action Cleanup since some previous step has failed
+2023-04-27_14-28-00:INFO:The following action failedInstall
+2023-04-27_14-28-00:INFO:TIME TAKEN by NewAgentDeployer on host mcbdbconsuat is 0: hrs 3: mins 2 sec
+2023-04-27_14-28-00:INFO:PERF:HOSTNAME:mcbdbconsuat:NewAgentDeployer_EXECUTION_TIME:182224
+2023-04-27_14-28-00:INFO:HOST:mcbdbconsuat
+2023-04-27_14-28-00:INFO:Destroying Logger
+2023-04-27_14-28-00:INFO:======================================New Agent Deployer END ====================================
+2023-04-27_14-28-00:INFO:Clearing EMSecurityContext EMExecutionContext in BaseDeployerOps
